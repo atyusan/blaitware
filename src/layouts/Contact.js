@@ -7,69 +7,96 @@ const Contact = ({ data }) => {
   const { contact_form_action } = config.params;
 
   return (
-    <section className="section">
-      <div className="container">
-        {markdownify(title, "h1", "text-center font-normal")}
-        <div className="section row pb-0">
-          <div className="col-12 md:col-6 lg:col-7">
-            <form
-              className="contact-form"
-              method="POST"
-              action={contact_form_action}
-            >
-              <div className="mb-3">
-                <input
-                  className="form-input w-full rounded-sm"
-                  name="name"
-                  type="text"
-                  placeholder="Name"
-                  required
-                />
+    <>
+      <section className="section pb-0">
+        <div className="container text-center">
+          {markdownify(title, "h1", "h2 mb-3")}
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="row contact-row">
+            <div className="col-12 lg:col-6">
+              <div className="content contact-info">
+                {markdownify(info.title, "h4")}
+                {markdownify(info.description, "p")}
+                <ul>
+                  {info.contacts.map((contact, index) => (
+                    <li key={index}>{markdownify(contact, "strong")}</li>
+                  ))}
+                </ul>
               </div>
-              <div className="mb-3">
-                <input
-                  className="form-input w-full rounded-sm"
-                  name="email"
-                  type="email"
-                  placeholder="Your email"
-                  required
-                />
-              </div>
-              <div className="mb-3">
-                <input
-                  className="form-input w-full rounded-sm"
-                  name="subject"
-                  type="text"
-                  placeholder="Subject"
-                  required
-                />
-              </div>
-              <div className="mb-3">
-                <textarea
-                  className="form-textarea w-full rounded-md"
-                  rows="7"
-                  placeholder="Your message"
-                />
-              </div>
-              <button type="submit" className="btn btn-primary">
-                Send Now
-              </button>
-            </form>
-          </div>
-          <div className="content col-12 md:col-6 lg:col-5">
-            {markdownify(info.title, "h4", "h5")}
-            {markdownify(info.description, "p", "mt-4")}
-            <ul className="contact-list mt-5">
-              {info.contacts.map((contact, index) => (
-                <li key={index}>
-                  {markdownify(contact, "strong", "text-text-dark")}
-                </li>
-              ))}
-            </ul>
+            </div>
+
+            <div className="col-12 lg:col-6">
+              <form
+                className="contact-form row"
+                method="POST"
+                action={contact_form_action}
+              >
+                <div className="col-12 lg:col-6">
+                  <label className="mb-1 block" htmlFor="first_name">
+                    First Name <span className="text-danger">*</span>
+                  </label>
+                  <input
+                    id="first_name"
+                    className="form-input w-full shadow-none"
+                    name="first_name"
+                    type="text"
+                    placeholder="First Name"
+                    required
+                  />
+                </div>
+                <div className="col-12 lg:col-6">
+                  <label className="mb-1 block" htmlFor="last_name">
+                    Last Name <span className="text-danger">*</span>
+                  </label>
+                  <input
+                    id="last_name"
+                    className="form-input w-full shadow-none"
+                    name="last_name"
+                    type="text"
+                    placeholder="Last Name"
+                    required
+                  />
+                </div>
+                <div className="col-12">
+                  <label className="mb-1 block" htmlFor="email_address">
+                    Email Address <span className="text-danger">*</span>
+                  </label>
+                  <input
+                    id="email_address"
+                    className="form-input w-full shadow-none"
+                    name="email_address"
+                    type="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
+                <div className="col-12">
+                  <label className="mb-1 block" htmlFor="message">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    className="form-textarea w-full shadow-none"
+                    name="message"
+                    rows="4"
+                    placeholder="Message"
+                  />
+                </div>
+                <div className="col-12">
+                  <button type="submit" className="btn btn-primary btn-sm mt-2">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

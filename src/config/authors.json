@@ -1,0 +1,17 @@
+{
+  "awab-husameldin": {
+    "name": "Awab Husameldin",
+    "avatar": "/images/avatar/03.jpg",
+    "bio": "Hic dolor cumque quod quas pariatur modi rerum qui consequatur, iusto inventore necessitatibus. Facilis quisquam magni, autem deleniti …"
+  },
+  "joseph-gonzalez": {
+    "name": "Joseph Gonzalez",
+    "avatar": "/images/avatar/04.jpg",
+    "bio": "Hic dolor cumque quod quas pariatur modi rerum qui consequatur, iusto inventore necessitatibus. Facilis quisquam magni, autem deleniti …"
+  },
+  "admin": {
+    "name": "Admin",
+    "avatar": "",
+    "bio": ""
+  }
+}

@@ -2,53 +2,73 @@
 title: Pricing
 layout: pricing
 draft: false
+description: Everything you need for best in class service
 plans:
-- title: Basic Plan
-  subtitle: Best For Small Individuals
-  price: 49
-  type: month
-  features:
-    - Express Service
-    - Customs Clearance
-    - Time-Critical Services
-  button:
-    label: Get started for free
-    link: "/contact"
+  - title: Basic Plan
+    subtitle: Best For Small Individuals
+    price: 0
+    type: month
+    features:
+      - Express Service
+      - Customs Clearance
+      - Time-Critical Services
+    button:
+      label: Get started for Free
+      link: /get-demo
 
-- title: Professional Plan
-  subtitle: Best For Professionals
-  price: 69
-  type: month
-  recommended: true
-  features:
-    - Express Service
-    - Customs Clearance
-    - Time-Critical Services
-    - Cloud Service
-    - Best Dashboard
-  button:
-    label: Get started
-    link: "/contact"
+  - title: Professional Plan
+    subtitle: Best For Professionals
+    price: 49
+    type: month
+    recommended: true
+    features:
+      - Express Service
+      - Customs Clearance
+      - Time-Critical Services
+      - Cloud Service
+      - Best Dashboard
+    button:
+      label: Get started
+      link: /get-demo
 
-- title: Business Plan
-  subtitle: Best For Large Individuals
-  price: 99
-  type: month
-  features:
-    - Express Service
-    - Customs Clearance
-    - Time-Critical Services
-  button:
-    label: Get started
-    link: "/contact"
+  - title: Business Plan
+    subtitle: Best For Large Individuals
+    price: 199
+    type: month
+    features:
+      - Express Service
+      - Customs Clearance
+      - Time-Critical Services
+    button:
+      label: Get started
+      link: /get-demo
+
+faq_title: Frequently Asked Questions
+faq_description: Vestibulum ante ipsum primis in faucibus orci luctus ultrices posuere cubilia Curae Donec
+faqs:
+  - title: How to change my billing information?
+    answer: You will be able to manage all projects through the platform. Once you insert your details and availability on the platform, you will be automatically assigned photoshoots when the place/date/time coincide with your data. All you’ll have to do is “accept” or “reject” the assignments before they expire, as well as their terms & conditions, and turn up at the given address on the right date/time. In addition, all updates and changes will be communicated through notifications on the platform.
+
+  - title: Can I Use Bigspring with cloud documents?
+    answer: |
+      The Service is provided for free during this pilot project, and is provided “as is” with is not committed to any level of service or availability of the Service.
+
+      A further If you enter into this agreement on behalf of a company, you hereby agree that the company is responsible under this Agreement for all actions and omissions
+
+  - title: If I cancel, can I archive my designs to keep them safe?
+    answer: |
+      A team of photography experts at will analyze your test and give you feedback and your results.
+
+      We don’t hand out grades like you would on a high school exam. Your test will either be accepted or rejected. In other words, you’ll either get a “passing grade” or you won’t.
+
+  - title: How can I adjust user permissions & admin provileges?
+    answer: We allows you to concentrate on snapping the pictures, while we take care of everything else. The platform automatically assigns photoshoots to you, depending on your availability, and allows you to upload all your work on it after completion. No muss no fuss!
 
 call_to_action:
   title: Need a larger plan?
   content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
-  image: '/images/cta.svg'
   button:
     enable: true
-    label: "Contact Us"
-    link: "/contact"
-    
+    label: Contact Us
+    link: /contact
 ---

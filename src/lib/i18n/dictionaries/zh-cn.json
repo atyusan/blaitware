@@ -1,0 +1,84 @@
+{
+  "cookie": {
+    "message": "本网站使用 Cookie。继续使用本网站即表示您同意使用 Cookie。",
+    "accept": "我接受"
+  },
+  "nav_button": "Get a Demo",
+  "main": [
+    { "name": "家", "url": "/" },
+    {
+      "name": "公司",
+      "hasChildren": true,
+      "children": [
+        { "name": "关于", "url": "/about" },
+        { "name": "团队", "url": "/team" },
+        { "name": "这个怎么运作", "url": "/how-it-works" },
+        { "name": "职业", "url": "/career" },
+        { "name": "职业详情", "url": "/career/sr-executive-service-assurance" }
+      ]
+    },
+    {
+      "name": "产品",
+      "hasChildren": true,
+      "children": [
+        { "name": "CRM", "url": "/products/product-1", "subtitle": "更快地转化潜在客户并完成销售。", "icon": "FaUsers" },
+        { "name": "Help Desk", "url": "/products/product-2", "subtitle": "提供出色客户支持的软件。", "icon": "FaDiceD6" },
+        { "name": "Workplace", "url": "/products/product-3", "subtitle": "提高生产力的应用。", "icon": "FaLaptopHouse" },
+        { "name": "Analytics", "url": "/products/product-4", "subtitle": "从任何数据集创建自定义报告。", "icon": "FaChartBar" },
+        { "name": "查看所有产品", "url": "/products", "icon": "FaArrowRight" }
+      ]
+    },
+    {
+      "name": "博客",
+      "hasChildren": true,
+      "children": [
+        { "name": "博客文章", "url": "/blogs" },
+        { "name": "博客详情", "url": "/blogs/post-1" },
+        { "name": "作者", "url": "/author" },
+        { "name": "作者详情", "url": "/author/awab-husameldin" }
+      ]
+    },
+    {
+      "name": "页面",
+      "hasChildren": true,
+      "children": [
+        { "name": "定价", "url": "/pricing" },
+        { "name": "案例研究", "url": "/case-studies" },
+        { "name": "案例详情", "url": "/case-studies/case-1" },
+        { "name": "FAQ", "url": "/faq" },
+        { "name": "隐私政策", "url": "/privacy-policy" },
+        { "name": "条款和条件", "url": "/terms-conditions" }
+      ]
+    },
+    { "name": "接触", "url": "/contact" }
+  ],
+  "footer": [
+    {
+      "name": "公司",
+      "menu": [
+        { "text": "关于", "url": "/about" },
+        { "text": "团队", "url": "/team" },
+        { "text": "这个怎么运作", "url": "/how-it-works" },
+        { "text": "职业", "url": "/career" }
+      ]
+    },
+    {
+      "name": "产品",
+      "menu": [
+        { "text": "CRM", "url": "/products/product-1" },
+        { "text": "Help Desk", "url": "/products/product-2" },
+        { "text": "Workplace", "url": "/products/product-3" },
+        { "text": "Analytics", "url": "/products/product-4" }
+      ]
+    },
+    {
+      "name": "支持",
+      "menu": [
+        { "text": "FAQ", "url": "/faq" },
+        { "text": "接触", "url": "/contact" },
+        { "text": "隐私政策", "url": "/privacy-policy" },
+        { "text": "条款和条件", "url": "/terms-conditions" }
+      ]
+    }
+  ]
+}

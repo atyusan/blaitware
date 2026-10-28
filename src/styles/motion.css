@@ -1,0 +1,357 @@
+/* Premium motion, transitions, and mobile responsive polish */
+
+/* .is-hoverable hover lift lives unlayered in style.css (beats utilities) */
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 0 6px 24px -6px rgba(45, 67, 121, 0.15);
+}
+
+html.dark .btn:hover,
+html.dark .btn:focus {
+  box-shadow: 0 6px 24px -1px rgba(0, 0, 0, 0.3);
+}
+
+/* Header sticky handled in navigation.css */
+
+/* Mobile nav open handled via .navbar-collapse.show in navigation.css */
+
+/* Hover / card motion continues below */
+
+/* Section spacing on small screens */
+@media (max-width: 767px) {
+  .section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .banner {
+    padding-top: 3rem;
+  }
+}
+
+/* Premium video play overlay */
+.has-video {
+  position: relative;
+  text-align: center;
+}
+
+.has-video .video-loader-btn {
+  border: 0;
+  outline: 0;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  color: #fff;
+  background-color: transparent;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.has-video .video-loader-btn::before {
+  position: absolute;
+  content: "";
+  transition: 0.3s;
+  height: 85px;
+  width: 85px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  background-color: #fff;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.has-video .video-loader-btn::after {
+  position: absolute;
+  content: "";
+  transition: 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.16);
+  z-index: -2;
+  background-color: rgba(10, 168, 167, 0.65);
+  border-radius: 50px;
+}
+
+.has-video .video-loader-btn .play-icon {
+  position: relative;
+  z-index: 2;
+  font-size: 27px;
+  transition: color 0.3s;
+}
+
+.has-video .video-loader-btn:hover {
+  color: #0aa8a7;
+  transition-delay: 0.1s;
+}
+
+.has-video .video-loader-btn:hover::after {
+  top: 0;
+  left: 0;
+  transform: translate(0, 0) scale(1);
+  border-radius: 0.8rem;
+}
+
+.has-video .video-loader-btn:hover::before {
+  transition-delay: 0.1s;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+@media (max-width: 991px) {
+  .has-video .video-loader-btn .play-icon {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .has-video .video-loader-btn::before {
+    height: 55px;
+    width: 55px;
+  }
+
+  .has-video .video-loader-btn::after {
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+
+  .has-video .video-loader-btn .play-icon {
+    font-size: 17px;
+  }
+}
+
+/* How it works timeline
+   Note: use hiw-block (not "block") — Tailwind's .block sets display:block and breaks .row flex.
+   Premium uses Bootstrap g-5 (24px half-gutter) + px-lg-4 (24px) so title edges sit ~48px
+   from center; dots use left/right:-60px (25px wide) to land on the center line.
+   The center stroke is a single element (.how-it-works-line) so it never breaks
+   between alternating sections. */
+.how-it-works-steps {
+  position: relative;
+}
+
+.how-it-works-line {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: 0;
+  width: 2px;
+  margin-left: -1px;
+  pointer-events: none;
+  background-color: rgba(10, 168, 167, 0.2);
+}
+
+.how-it-works .hiw-block {
+  z-index: 1;
+  position: relative;
+}
+
+.how-it-works .hiw-block .section-title {
+  position: relative;
+  z-index: 3;
+}
+
+.how-it-works .hiw-block .section-title::after {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  top: 12px;
+  left: -60px;
+  border: 5px solid #0bb6b5;
+  background-color: #099a99;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.how-it-works .hiw-block.hiw-block-right-image .section-title::after {
+  left: auto;
+  right: -60px;
+}
+
+/* Cap the vertical line above the first step and below the last */
+.how-it-works.first-element .section-title::before {
+  position: absolute;
+  content: "";
+  height: 1500px;
+  width: 5px;
+  bottom: calc(100% - 13px);
+  right: -50px;
+  background-color: #edf6f5;
+  z-index: 1;
+}
+
+.how-it-works.last-element .section-title::before {
+  position: absolute;
+  content: "";
+  height: 1500px;
+  width: 5px;
+  top: 15px;
+  left: -50px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.how-it-works.last-element.has-bg-light .section-title::before {
+  background-color: #edf6f5;
+  left: auto;
+  right: -50px;
+}
+
+html.dark .how-it-works.first-element .section-title::before {
+  background-color: #1b2229;
+}
+
+html.dark .how-it-works.last-element .section-title::before {
+  background-color: #1e262c;
+}
+
+html.dark .how-it-works.last-element.has-bg-light .section-title::before {
+  background-color: #1b2229;
+}
+
+@media (min-width: 992px) {
+  .how-it-works-line {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .how-it-works .hiw-block .section-title::after,
+  .how-it-works.first-element .section-title::before,
+  .how-it-works.last-element .section-title::before {
+    display: none;
+  }
+}
+
+/* Pricing recommended card scale lives in components.css */
+
+/* Tools / brand hover */
+.tool-chip {
+  background-color: #fff;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+html.dark .tool-chip {
+  background-color: #fff !important;
+}
+
+.tool-chip:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 24px -6px rgba(45, 67, 121, 0.15);
+}
+
+/* Testimonials */
+.testimonial-carousel {
+  padding-bottom: 100px !important;
+}
+
+.testimonial-carousel .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.testimonial-carousel .swiper-pagination-bullet {
+  width: 16px !important;
+  height: 16px !important;
+  margin: 0 6px !important;
+  background: transparent !important;
+  border: 1px solid #0aa8a7 !important;
+  opacity: 1 !important;
+  border-radius: 50%;
+}
+
+.testimonial-carousel .swiper-pagination-bullet-active {
+  background: #0aa8a7 !important;
+  opacity: 1 !important;
+}
+
+/* Cookie banner mobile */
+@media (max-width: 575px) {
+  .cookie-box {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    max-width: none;
+    padding: 1.25rem;
+  }
+}
+
+.cookie-box {
+  animation: cookie-in 0.35s ease both;
+}
+
+@keyframes cookie-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Page preloader */
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+
+.preloader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+html.dark .preloader {
+  background-color: #181818;
+}
+
+.preloader-spinner {
+  width: 42px;
+  height: 42px;
+  border: 4px solid #0aa8a7;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: preloader-spin 0.8s linear infinite;
+}
+
+@keyframes preloader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* CTA arrow nudge already in components; ensure smooth */
+.cta-link {
+  transition: color 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .is-hoverable:hover,
+  .tool-chip:hover {
+    transform: none;
+  }
+}

@@ -1,135 +1,62 @@
 import Link from "next/link";
-import React from "react";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const Pagination = ({ section, currentPage, totalPages }) => {
-  const indexPageLink = currentPage === 2;
   const hasPrevPage = currentPage > 1;
   const hasNextPage = totalPages > currentPage;
 
-  let pageList = [];
-  for (let i = 1; i <= totalPages; i++) {
-    pageList.push(i);
-  }
+  const pageHref = (page) => {
+    if (page <= 1) return section ? `/${section}` : "/";
+    return `${section ? "/" + section : ""}/page/${page}`;
+  };
+
+  const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
+
+  if (totalPages <= 1) return null;
 
   return (
-    <>
-      {totalPages > 1 && (
-        <nav
-          className="mb-4 mt-10 flex justify-center space-x-2.5"
-          aria-label="Pagination"
-        >
-          {/* previous */}
-          {hasPrevPage ? (
+    <div className="col-12 pt-5">
+      <ul className="pagination mb-0 flex flex-wrap justify-center">
+        {hasPrevPage && (
+          <li className="page-item">
             <Link
-              href={
-                indexPageLink
-                  ? `${section ? "/" + section : "/"}`
-                  : `${section ? "/" + section : ""}/page/${currentPage - 1}`
-              }
-              className="inline-flex w-10.5 justify-center rounded-md bg-light px-2 py-2 text-text-dark hover:bg-primary hover:text-white"
+              href={pageHref(currentPage - 1)}
+              className="page-link arrow"
+              aria-label="Pagination Arrow"
             >
-              <span className="sr-only">Previous</span>
-              <svg
-                className="mt-1 h-5 w-5"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <FaAngleLeft />
             </Link>
-          ) : (
-            <span className="inline-flex w-10.5 justify-center rounded-md bg-light px-2 py-2 text-text-dark">
-              <span className="sr-only">Previous</span>
-              <svg
-                className="mt-1 h-5 w-5"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
+          </li>
+        )}
+
+        {pages.map((page) => {
+          const isActive = page === currentPage;
+          return (
+            <li className="page-item" key={`page-${page}`}>
+              <Link
+                href={pageHref(page)}
+                className={`page-link${isActive ? " active" : ""}`}
+                aria-current={isActive ? "page" : undefined}
               >
-                <path
-                  fillRule="evenodd"
-                  d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </span>
-          )}
+                {page}
+              </Link>
+            </li>
+          );
+        })}
 
-          {/* page index */}
-          {pageList.map((pagination, i) => (
-            <React.Fragment key={`page-${i}`}>
-              {pagination === currentPage ? (
-                <span
-                  aria-current="page"
-                  className={`rounded-md bg-primary px-4 py-2 text-white`}
-                >
-                  {pagination}
-                </span>
-              ) : (
-                <Link
-                  href={
-                    i === 0
-                      ? `${section ? "/" + section : "/"}`
-                      : `${section ? "/" + section : ""}/page/${pagination}`
-                  }
-                  aria-current="page"
-                  className={`rounded-md  bg-light px-4 py-2 text-text-dark hover:bg-primary hover:text-white`}
-                >
-                  {pagination}
-                </Link>
-              )}
-            </React.Fragment>
-          ))}
-
-          {/* next page */}
-          {hasNextPage ? (
+        {hasNextPage && (
+          <li className="page-item">
             <Link
-              href={`${section ? "/" + section : ""}/page/${currentPage + 1}`}
-              className="inline-flex w-10.5 justify-center rounded-md bg-light px-2 py-2 text-text-dark hover:bg-primary hover:text-white"
+              href={pageHref(currentPage + 1)}
+              className="page-link arrow"
+              aria-label="Pagination Arrow"
             >
-              <span className="sr-only">Next</span>
-              <svg
-                className="mt-1 h-5 w-5"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <FaAngleRight />
             </Link>
-          ) : (
-            <span className="inline-flex w-10.5 justify-center rounded-md bg-light px-2 py-2 text-text-dark">
-              <span className="sr-only">Next</span>
-              <svg
-                className="mt-1 h-5 w-5"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </span>
-          )}
-        </nav>
-      )}
-    </>
+          </li>
+        )}
+      </ul>
+    </div>
   );
 };
 

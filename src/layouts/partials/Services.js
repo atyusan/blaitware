@@ -8,31 +8,40 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const Services = ({ services }) => {
   return services.map((service, index) => {
-    const isOdd = index % 2 > 0;
+    // Premium: even indexes get bg-light; image on the right
+    const isEven = index % 2 === 0;
     return (
       <section
         key={`service-${index}`}
-        className={`section ${isOdd && "bg-light"}`}
+        className={`section${isEven ? " bg-light" : ""}`}
       >
         <div className="container">
-          <div className="items-center gap-8 md:grid md:grid-cols-2">
-            {/* Carousel */}
-            <div className={`service-carousel ${!isOdd && "md:order-2"}`}>
+          <div className="row items-center">
+            {/* Carousel / image */}
+            <div
+              className={`service-carousel col-12 mb-8 lg:col-6 lg:mb-0 ${
+                isEven ? "lg:order-2" : "lg:order-1"
+              }`}
+            >
               <Swiper
                 modules={[Autoplay, Pagination]}
                 pagination={
-                  service.images.length > 1 ? { clickable: true } : false
+                  service.images?.length > 1 ? { clickable: true } : false
                 }
                 autoplay={{
                   delay: 5000,
                   disableOnInteraction: false,
                 }}
-                init={service?.images > 1 ? false : true}
               >
-                {/* Slides */}
-                {service?.images.map((slide, index) => (
-                  <SwiperSlide key={index}>
-                    <Image src={slide} alt="" width={600} height={500} />
+                {service?.images?.map((slide, slideIndex) => (
+                  <SwiperSlide key={slideIndex}>
+                    <Image
+                      src={slide}
+                      alt={service?.title || ""}
+                      width={600}
+                      height={500}
+                      className="img"
+                    />
                   </SwiperSlide>
                 ))}
               </Swiper>
@@ -40,27 +49,29 @@ const Services = ({ services }) => {
 
             {/* Content */}
             <div
-              className={`service-content mt-5 md:mt-0 ${
-                !isOdd && "md:order-1"
+              className={`service-content col-12 lg:col-6 ${
+                isEven ? "lg:order-1" : "lg:order-2"
               }`}
             >
-              <h2 className="font-bold leading-[40px]">{service?.title}</h2>
-              <p className="mb-2 mt-4">{service?.content}</p>
-              {service.button.enable && (
-                <Link
-                  href={service?.button.link}
-                  className="cta-link inline-flex items-center text-primary"
-                >
-                  {service?.button.label}
-                  <Image
-                    className="ml-1"
-                    src="/images/arrow-right.svg"
-                    width={18}
-                    height={14}
-                    alt="arrow"
-                  />
-                </Link>
-              )}
+              <div className={isEven ? "me-0 lg:me-12" : "ms-0 lg:ms-12"}>
+                <h2 className="section-title h3">{service?.title}</h2>
+                <p className="mb-4">{service?.content}</p>
+                {service.button?.enable && (
+                  <Link
+                    href={service?.button.link}
+                    className="cta-link inline-flex items-center text-primary"
+                  >
+                    {service?.button.label}
+                    <Image
+                      className="ml-1"
+                      src="/images/arrow-right.svg"
+                      width={18}
+                      height={14}
+                      alt="arrow"
+                    />
+                  </Link>
+                )}
+              </div>
             </div>
           </div>
         </div>

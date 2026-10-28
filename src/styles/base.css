@@ -3,21 +3,27 @@ html {
 }
 
 body {
-  @apply bg-body font-primary font-normal leading-relaxed text-text;
+  @apply bg-body font-primary font-medium leading-[1.75] text-text;
 }
 
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
   @apply font-primary font-bold leading-tight text-text-dark;
 }
 
 h1,
 .h1 {
-  @apply font-primary text-h1-sm md:text-h1;
+  @apply text-h1-sm md:text-h1;
 }
 
 h2,

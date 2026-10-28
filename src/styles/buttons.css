@@ -1,23 +1,58 @@
 .btn {
-  @apply inline-block font-primary font-bold border px-7 py-4.25 leading-4.5 transition;
+  @apply inline-block border px-[25.6px] py-[14.4px] font-secondary text-base font-medium leading-4 transition;
+}
+
+.btn-sm {
+  @apply px-[25.6px] py-[14.4px] text-base;
 }
 
 .btn-primary {
-  @apply bg-primary text-white border-transparent z-1 rounded-[30px] relative hover:shadow transition-all;
+  @apply relative z-1 rounded-[50px] border-transparent bg-primary text-white transition-all hover:shadow;
 }
 .btn-primary:after {
-  @apply w-full h-full rounded-[30px] absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] content-[""] bg-primary transition-all duration-300 ease-in-out z-[-1];
+  @apply absolute top-1/2 left-1/2 z-[-1] h-full w-full translate-x-[-50%] translate-y-[-50%] rounded-[50px] bg-primary content-[""] transition-all duration-300 ease-in-out;
 }
 .btn-primary:hover::after {
-  @apply w-[110%] h-[110%];
+  @apply h-[110%] w-[110%];
 }
 
 .btn-outline-primary {
-  @apply relative text-text border-0 bg-transparent rounded-[30px] hover:border-transparent hover:text-primary;
+  @apply relative rounded-[50px] border-0 bg-transparent text-primary hover:border-transparent hover:text-primary;
 }
 .btn-outline-primary:after {
-  @apply w-full h-full rounded-[30px] absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] content-[""] bg-transparent border border-primary transition-all duration-300 ease-in-out z-0;
+  @apply absolute top-1/2 left-1/2 z-0 h-full w-full translate-x-[-50%] translate-y-[-50%] rounded-[50px] border border-primary bg-transparent content-[""] transition-all duration-300 ease-in-out;
 }
 .btn-outline-primary:hover::after {
-  @apply w-[110%] h-[110%];
+  @apply h-[110%] w-[110%];
+}
+
+/* Text link with sliding arrow (career Apply for Position, etc.) */
+.btn-link {
+  color: var(--color-primary, #0aa8a7);
+  text-decoration: none;
+}
+
+.btn-link i,
+.btn-link svg {
+  font-size: 12px;
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  margin-bottom: 1px;
+  transition: margin-left 0.2s ease;
+}
+
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:active {
+  color: var(--color-primary, #0aa8a7);
+}
+
+.btn-link:hover i,
+.btn-link:hover svg,
+.btn-link:focus i,
+.btn-link:focus svg,
+.btn-link:active i,
+.btn-link:active svg {
+  margin-left: 10px;
 }

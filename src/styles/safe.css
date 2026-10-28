@@ -4,5 +4,6 @@
 
 .form-input,
 .form-textarea {
-  @apply border-border py-1.5 focus:border-primary focus:ring-transparent;
+  @apply rounded border-border py-1.5 focus:border-primary focus:ring-transparent;
+  border-radius: 4px; /* match premium Bootstrap form-control */
 }

@@ -1,0 +1,84 @@
+{
+  "cookie": {
+    "message": "Diese Website verwendet Cookies. Wenn Sie diese Website weiterhin nutzen, stimmen Sie deren Verwendung zu.",
+    "accept": "Ich akzeptiere"
+  },
+  "nav_button": "Get a Demo",
+  "main": [
+    { "name": "Home", "url": "/" },
+    {
+      "name": "Company",
+      "hasChildren": true,
+      "children": [
+        { "name": "About", "url": "/about" },
+        { "name": "Team", "url": "/team" },
+        { "name": "How It Works", "url": "/how-it-works" },
+        { "name": "Career", "url": "/career" },
+        { "name": "Career Details", "url": "/career/sr-executive-service-assurance" }
+      ]
+    },
+    {
+      "name": "Products",
+      "hasChildren": true,
+      "children": [
+        { "name": "CRM", "url": "/products/product-1", "subtitle": "Leads konvertieren und Abschlüsse beschleunigen.", "icon": "FaUsers" },
+        { "name": "Help Desk", "url": "/products/product-2", "subtitle": "Software für erstklassigen Kundensupport.", "icon": "FaDiceD6" },
+        { "name": "Workplace", "url": "/products/product-3", "subtitle": "Anwendung zur Produktivitätssteigerung.", "icon": "FaLaptopHouse" },
+        { "name": "Analytics", "url": "/products/product-4", "subtitle": "Erstellen Sie benutzerdefinierte Berichte.", "icon": "FaChartBar" },
+        { "name": "Alle Produkte", "url": "/products", "icon": "FaArrowRight" }
+      ]
+    },
+    {
+      "name": "Blog",
+      "hasChildren": true,
+      "children": [
+        { "name": "Blog Posts", "url": "/blogs" },
+        { "name": "Blog Details", "url": "/blogs/post-1" },
+        { "name": "Author", "url": "/author" },
+        { "name": "Author Details", "url": "/author/awab-husameldin" }
+      ]
+    },
+    {
+      "name": "Pages",
+      "hasChildren": true,
+      "children": [
+        { "name": "Pricing", "url": "/pricing" },
+        { "name": "Case Studies", "url": "/case-studies" },
+        { "name": "Case Studies Details", "url": "/case-studies/case-1" },
+        { "name": "FAQ", "url": "/faq" },
+        { "name": "Privacy Policy", "url": "/privacy-policy" },
+        { "name": "Terms & Conditions", "url": "/terms-conditions" }
+      ]
+    },
+    { "name": "Contact", "url": "/contact" }
+  ],
+  "footer": [
+    {
+      "name": "Company",
+      "menu": [
+        { "text": "About Us", "url": "/about" },
+        { "text": "Team", "url": "/team" },
+        { "text": "How It Works", "url": "/how-it-works" },
+        { "text": "Career", "url": "/career" }
+      ]
+    },
+    {
+      "name": "Products",
+      "menu": [
+        { "text": "CRM", "url": "/products/product-1" },
+        { "text": "Help Desk", "url": "/products/product-2" },
+        { "text": "Workplace", "url": "/products/product-3" },
+        { "text": "Analytics", "url": "/products/product-4" }
+      ]
+    },
+    {
+      "name": "Support",
+      "menu": [
+        { "text": "FAQ", "url": "/faq" },
+        { "text": "Contact", "url": "/contact" },
+        { "text": "Privacy Policy", "url": "/privacy-policy" },
+        { "text": "Terms & Conditions", "url": "/terms-conditions" }
+      ]
+    }
+  ]
+}

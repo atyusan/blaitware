@@ -11,16 +11,30 @@
         "text": "#777",
         "text_dark": "#222"
       }
+    },
+    "darkmode": {
+      "theme_color": {
+        "primary": "#0aa8a7",
+        "body": "#1e262c",
+        "border": "#4e4e4e",
+        "light": "#1b2229"
+      },
+      "text_color": {
+        "text": "#cbcbcb",
+        "text_dark": "#fff"
+      }
     }
   },
   "fonts": {
     "font_family": {
-      "primary": "Lato:wght@300;400;700",
-      "primary_type": "sans-serif"
+      "primary": "Urbanist:wght@500;600;700",
+      "primary_type": "sans-serif",
+      "secondary": "Poppins:wght@400;500",
+      "secondary_type": "sans-serif"
     },
     "font_size": {
       "base": "16",
-      "scale": "1.20"
+      "scale": "1.25"
     }
   }
 }

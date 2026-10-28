@@ -1,3 +1,22 @@
+/* Bootstrap / premium Bigspring container widths */
 @utility container {
-  @apply mx-auto max-w-285 px-8;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 12px; /* Bootstrap gutter — premium navbar content ~936px at lg */
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+  @media (min-width: 1400px) {
+    max-width: 1320px;
+  }
 }

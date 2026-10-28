@@ -1,52 +1,85 @@
+"use client";
+
 import Social from "@components/Social";
 import config from "@config/config.json";
-import menu from "@config/menu.json";
 import social from "@config/social.json";
+import {
+  getLocaleFromPath,
+  localizePath,
+} from "@lib/i18n/config";
+import { getDictionary } from "@lib/i18n/getDictionary";
 import { markdownify } from "@lib/utils/textConverter";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathname = usePathname();
+  const locale = getLocaleFromPath(pathname);
+  const dict = getDictionary(locale);
   const { copyright, footer_content } = config.params;
-  const { footer } = menu;
+  const footer = dict.footer;
+  const { logo, logo_dark, logo_width, logo_height, title } = config.site;
+  const width = Number(logo_width) || 180;
+  const height = Number(logo_height) || 39;
+
   return (
     <footer className="section bg-light pb-0">
       <div className="container">
-        {/* footer menu */}
-        <div className="row">
-          {footer.map((col) => {
-            return (
-              <div className="mb-12 sm:col-6 lg:col-3" key={col.name}>
-                {markdownify(col.name, "h2", "h5")}
-                <ul className="mt-6">
-                  {col?.menu.map((item) => (
-                    <li className="mb-1" key={item.text}>
-                      <Link href={item.url} rel="">
-                        {item.text}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+        <div className="row justify-center">
+          <div className="col-12 xl:col-11">
+            <div className="section pt-0">
+              <div className="row gap-y-8 gy-4">
+                {footer.map((col) => (
+                  <div className="col-12 sm:col-6 lg:col-3" key={col.name}>
+                    <div className="h5 mb-6">{col.name}</div>
+                    <ul className="footer-list list-none">
+                      {col.menu.map((item) => (
+                        <li key={item.text}>
+                          <Link
+                            href={localizePath(item.url, locale)}
+                            title={item.text}
+                          >
+                            {item.text}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+                <div className="col-12 sm:col-6 lg:col-3">
+                  <Link
+                    href={localizePath("/", locale)}
+                    className="mb-4 block h5"
+                    aria-label={title || "Bigspring"}
+                  >
+                    <Image
+                      src={logo}
+                      width={width}
+                      height={height}
+                      alt={title || "Bigspring"}
+                      className="img-light h-auto w-auto"
+                    />
+                    <Image
+                      src={logo_dark || logo}
+                      width={width}
+                      height={height}
+                      alt={title || "Bigspring"}
+                      className="img-dark h-auto w-auto"
+                    />
+                  </Link>
+                  {markdownify(footer_content, "p", "mb-6")}
+                  <Social source={social} className="social-icons" />
+                </div>
               </div>
-            );
-          })}
-          {/* social icons */}
-          <div className="md-12 sm:col-6 lg:col-3">
-            <Link href="/" aria-label="Bigspring">
-              <Image
-                src={config.site.logo}
-                width={config.site.logo_width}
-                height={config.site.logo_height}
-                alt=""
-              />
-            </Link>
-            {markdownify(footer_content, "p", "mt-3 mb-6")}
-            <Social source={social} className="social-icons mb-8" />
+            </div>
+            <div className="footer-copyright border-t border-border py-6 text-center">
+              {markdownify(
+                copyright.replace("{year}", String(new Date().getFullYear())),
+                "small",
+              )}
+            </div>
           </div>
-        </div>
-        {/* copyright */}
-        <div className="border-t border-border py-6">
-          {markdownify(copyright, "p", "text-sm text-center")}
         </div>
       </div>
     </footer>
