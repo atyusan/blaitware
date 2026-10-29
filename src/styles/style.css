@@ -22,7 +22,7 @@
 
 @theme {
   --shadow: 0 12px 24px -6px rgba(45, 67, 121, 0.1);
-  /* Match Bootstrap / premium Bigspring breakpoints */
+  /* Match Bootstrap-scale breakpoints */
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
@@ -97,6 +97,21 @@ html.dark .header.navigation.is-sticky {
 
 html.dark .is-hoverable:hover {
   box-shadow: 0 6px 24px -1px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Services offerings: gy-* utilities are not generated; add real card spacing */
+.services-offerings {
+  row-gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .services-offerings {
+    row-gap: 2rem;
+  }
+
+  .services-offerings > [class*="col-"] {
+    padding-inline: 1rem; /* slightly wider than default half-gutter between cards */
+  }
 }
 
 /* Career listing: match Bootstrap gx-md-5 / gy-5 (3rem gutters) */

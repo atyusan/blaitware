@@ -1,29 +1,44 @@
 ---
-title: Terms of Service
+title: Terms & Conditions
 layout: default
 draft: false
 ---
 
-##### Responsibility of Contributors
+These Terms & Conditions govern use of the **Blait Labs** website and related marketing materials operated by **Blaitware**. Product subscriptions and consulting engagements are governed by their respective order forms or statements of work.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+##### Acceptance
 
-pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
+By accessing blait-labs sites you agree to these terms. If you do not agree, do not use the site.
 
-##### Gathering of Personal Information
+##### Services described
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+Product names (including Blait CRM, Blait Desk, Blait Workplace, Nexora, Blait Analytics, Bytstack, Care-Sync, and Edu-Core) and service descriptions on this site are for information. Features, pricing, and availability may change. Binding commitments are only those in a signed agreement or accepted order.
 
-##### Protection of Personal- Information
+##### Accounts & demos
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.
+Demo requests and form submissions must use accurate information. You are responsible for safeguarding any credentials issued to you.
 
-Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat
+##### Acceptable use
 
-##### Privacy Policy Changes
+You may not misuse the site, attempt unauthorized access, disrupt services, scrape content at abusive scale, or use the site for unlawful purposes.
 
-1. Sll the Themefisher items are designed to be with the latest , We check all
-2. comments that threaten or harm the reputation of any person or organization
-3. personal information including, but limited to, email addresses, telephone numbers
-4. Any Update come in The technology Customer will get automatic Notification.
+##### Intellectual property
+
+Site content, trademarks, and brand assets are owned by Blaitware / Blait Labs or licensors. You may not copy or reuse them without permission except for fair personal reference.
+
+##### Disclaimer
+
+The website is provided “as is.” To the fullest extent permitted by law, Blaitware disclaims warranties of merchantability, fitness for a particular purpose, and non-infringement regarding site content.
+
+##### Limitation of liability
+
+To the fullest extent permitted by law, Blaitware and Blait Labs are not liable for indirect, incidental, or consequential damages arising from site use. Liability for product or consulting services is defined in the applicable customer agreement.
+
+##### Governing law
+
+These terms are governed by the laws of the Federal Republic of Nigeria, without regard to conflict-of-law principles. Courts in Abuja shall have jurisdiction over disputes arising from website use, unless a customer agreement specifies otherwise.
+
+##### Contact
+
+Questions about these terms: [hello@blaitlabs.com](mailto:hello@blaitlabs.com) · +2347066009943  
+3 Barr P.I Oyewole Str, News engineering, Abuja

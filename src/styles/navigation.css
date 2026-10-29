@@ -1,4 +1,4 @@
-/* Header / navigation — aligned to premium Bigspring */
+/* Header / navigation */
 
 .header.navigation {
   position: sticky;
@@ -330,8 +330,35 @@
     transition: 0.2s;
   }
 
+  /* Products mega menu — landscape grid instead of tall single column */
   .nav-dropdown.dropdown-lg .nav-dropdown-list {
-    width: 260px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 0.25rem 0.75rem;
+    width: min(720px, calc(100vw - 2rem));
+    padding: 1rem 1.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .nav-dropdown.dropdown-lg .nav-dropdown-item:last-child {
+    grid-column: 1 / -1;
+    margin-top: 0.35rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(233, 233, 233, 0.9);
+  }
+
+  .nav-dropdown.dropdown-lg .nav-dropdown-item:last-child .nav-dropdown-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 15px !important;
+  }
+
+  .nav-dropdown.dropdown-lg .nav-dropdown-item:last-child .dropdown-icon {
+    position: static;
+    top: auto;
+    left: auto;
   }
 
   .nav-dropdown-list::after {
@@ -406,6 +433,10 @@
   .nav-dropdown.is-open > .nav-dropdown-list .nav-dropdown-item:nth-child(8) {
     transition-delay: 0.48s;
   }
+  .nav-dropdown:hover > .nav-dropdown-list .nav-dropdown-item:nth-child(9),
+  .nav-dropdown.is-open > .nav-dropdown-list .nav-dropdown-item:nth-child(9) {
+    transition-delay: 0.54s;
+  }
 
   .nav-dropdown-link {
     display: inline-block;
@@ -414,6 +445,19 @@
 
   .nav-dropdown.dropdown-lg .nav-dropdown-link {
     display: block;
+    min-height: 3.5rem;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+  }
+
+  .nav-dropdown.dropdown-lg .nav-dropdown-link .dropdown-icon {
+    top: 1rem;
+  }
+
+  .nav-dropdown.dropdown-lg .dropdown-subtitle {
+    font-size: 0.75rem;
+    line-height: 1.35;
+    margin-top: 0.15rem;
   }
 
   .navbar-actions {
@@ -558,6 +602,10 @@ html.dark .dropdown-subtitle {
   html.dark .nav-dropdown-list::after {
     background-color: #222b32;
     box-shadow: 0 6px 50px -1px rgba(0, 0, 0, 0.3);
+  }
+
+  html.dark .nav-dropdown.dropdown-lg .nav-dropdown-item:last-child {
+    border-top-color: rgba(78, 78, 78, 0.75);
   }
 }
 

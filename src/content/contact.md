@@ -3,10 +3,12 @@ title: "Contact Us"
 layout: "contact"
 draft: false
 info:
-  title: Why you should contact us!
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit recusandae voluptates doloremque veniam temporibus porro culpa ipsa, nisi soluta minima saepe laboriosam debitis nesciunt.
+  title: Let’s talk products, services, or both
+  description: Reach us for demos, pricing, Care-Sync or Edu-Core evaluations, custom websites and systems, or infrastructure and hosting questions. Our team will respond promptly.
   contacts:
-    - "Phone: +88 125 256 452"
-    - "Mail: [info@bigspring.com](mailto:info@bigspring.com)"
-    - "Address: 360 Main rd, Rio, Brazil"
+    - "Phone: +2347066009943"
+    - "Mail: [hello@blaitlabs.com](mailto:hello@blaitlabs.com)"
+    - "Address: 3 Barr P.I Oyewole Str, News engineering, Abuja"
 ---
+
+Tell us about your organization and what you need—SaaS demos, consulting proposals, or a mix. A specialist from our team will follow up with next steps.

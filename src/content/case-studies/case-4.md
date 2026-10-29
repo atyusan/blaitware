@@ -1,6 +1,6 @@
 ---
-title: Spotify
-description: We are looking for a personal financial planning pro (Certified …
+title: Northline Digital hosts on Bytstack
+description: An agency consolidated client websites onto Bytstack with our support.
 image: /images/case-studies/04.png
 draft: false
 weight: 4
@@ -8,28 +8,25 @@ weight: 4
 
 ##### Client
 
-We are looking for a personal financial planning pro (Certified Financial Planner™ preferred) who will lead our client advising efforts. You will be a fiduciary who works with clients providing holistic advice on areas including: saving, retirement, debt management, investments. You’ll be on the front lines helping clients in what is arguably the most important position at the company.
+Northline Digital builds marketing sites for SMEs and needed reliable hosting without managing servers in-house.
 
 ##### Challenge
 
-We are especially interested in finding developers with experience either building web APIs with Go or experience with functional programming (e.g. Elixir, NodeJS, Clojure, F#). You might not have experience with all the technologies in our stack, but you are motivated to learn deeply. You will get the opportunity to work with both Go and Elixir with experienced team mates who can teach and pair with you to learn whatever you have less experience with.You care about security, code quality, scalability, performance, and simplicity. Above all, you seek operational excellence and apply the best engineering practices possible. Not everything that you or your team do can be perfect, but you make sure that you always know the trade-offs.
-
-![Spotify case study](/images/case-studies/case-1.jpg)
+Fragmented shared hosting caused inconsistent uptime, SSL issues, and slow client launches.
 
 ##### Concept
 
-1. must keep passwords secure and confidential;
-2. are solely responsible for User Data and all activity in their account while using the Service;
-3. must use commercially reasonable efforts to prevent unauthorized access to their account, and notify Conclude promptly of any such unauthorized access; and
-4. may use the Service only in accordance with Conclude’s online user guide and all applicable laws and regulations.
+Standardize new and migrated sites on Bytstack PaaS, with optional Nexora for client email campaigns.
+
+![Case study visual](/images/case-studies/04.png)
 
 ##### Solution
 
-- Enhance or improve User experience, our Site, or our Service.
-- Process transactions.
-- Send emails about our Site or respond to inquiries.
-- As this Privacy Policy and our Terms of Service.
+- Migrated priority client domains with staging checks
+- Automated SSL and environment separation
+- Documented deploy workflow for Northline developers
+- Added Nexora for two retainers needing email marketing
 
 ##### Results
 
-We are looking for a personal financial planning pro (Certified Financial Planner™ preferred) who will lead our client advising efforts. You will be a fiduciary who works with clients providing holistic advice on areas including: saving, retirement, debt
+Launch lead time shrank and support tickets related to hosting dropped sharply.

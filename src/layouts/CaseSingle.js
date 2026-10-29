@@ -80,8 +80,8 @@ const CaseSingle = ({ data, prevCase, nextCase }) => {
               <div className="ps-0 text-center lg:ps-12 lg:text-start">
                 <h2 className="section-title h3">Let’s work together.</h2>
                 <p className="mb-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Consequat tristique eget amet, tempus eu at consecttur.
+                  Ready for a similar outcome? Talk with us about
+                  products, custom delivery, or hosting on Bytstack.
                 </p>
                 <Link href="/contact" className="btn btn-primary" title="Contact Us">
                   Contact Us

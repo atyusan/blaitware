@@ -1,29 +1,45 @@
 ---
-title: Privacy & Policy
+title: Privacy Policy
 layout: default
 draft: false
 ---
 
-##### Responsibility of Contributors
+This Privacy Policy describes how **Blait Labs** (a division of **Blaitware**) collects, uses, and protects information when you use blait-labs websites, product demos, and related services.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+##### Who we are
 
-pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
+We operate from Abuja. Contact us at [hello@blaitlabs.com](mailto:hello@blaitlabs.com) or +2347066009943 regarding privacy questions.
 
-##### Gathering of Personal Information
+##### Information we collect
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+We may collect information you provide directly (such as name, email, phone, company, and message content when you contact us or request a demo) and technical data such as browser type, device information, and approximate location derived from IP address.
 
-##### Protection of Personal- Information
+##### How we use information
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.
+We use personal information to respond to inquiries, schedule demos, deliver products and services, improve our websites, communicate about updates, and meet legal or security obligations.
 
-Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat
+##### Sharing
 
-##### Privacy Policy Changes
+We do not sell personal information. We may share data with processors who help us operate email, hosting, analytics, or support—under agreements that require appropriate protection—or when required by law.
 
-1. Sll the Themefisher items are designed to be with the latest , We check all
-2. comments that threaten or harm the reputation of any person or organization
-3. personal information including, but limited to, email addresses, telephone numbers
-4. Any Update come in The technology Customer will get automatic Notification.
+##### Retention & security
+
+We retain information only as long as needed for the purposes above or as required by law. We apply reasonable administrative and technical safeguards; no method of transmission is perfectly secure.
+
+##### Your choices
+
+You may request access, correction, or deletion of personal information we hold about you by emailing hello@blaitlabs.com. You may also unsubscribe from marketing emails using links in those messages.
+
+##### Cookies
+
+Our site may use cookies or similar technologies for essential functionality and analytics. You can control cookies through your browser settings.
+
+##### Changes
+
+We may update this policy from time to time. Continued use of the site after changes means you accept the revised policy.
+
+##### Contact
+
+Blait Labs / Blaitware  
+3 Barr P.I Oyewole Str, News engineering, Abuja  
+[hello@blaitlabs.com](mailto:hello@blaitlabs.com) · +2347066009943

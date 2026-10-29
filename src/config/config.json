@@ -1,13 +1,13 @@
 {
   "site": {
-    "title": "Bigspring",
+    "title": "Blait Labs",
     "base_url": "/",
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
-    "logo_dark": "/images/logo-dark.png",
-    "logo_width": "180",
-    "logo_height": "39",
-    "logo_text": "Bigspring"
+    "favicon": "/images/blaitlabs-icon.png",
+    "logo": "/images/blaitlabs-logo.png",
+    "logo_dark": "/images/blaitlabs-logo-dark.png",
+    "logo_width": "170",
+    "logo_height": "58",
+    "logo_text": "Blait Labs"
   },
 
   "settings": {
@@ -24,7 +24,7 @@
 
   "params": {
     "contact_form_action": "#",
-    "footer_content": "Lorem ipsum dolor sit amet, consectetur elit consjat tristique eget amet.",
+    "footer_content": "Builds enterprise-grade software, websites and apps for growth, operational efficiency, and end-to-end delivery.",
     "copyright": "© {year} Blaitware"
   },
 
@@ -34,8 +34,8 @@
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
-    "meta_image": "",
-    "meta_description": "A SAAS template for nextjs"
+    "meta_author": "Blait Labs",
+    "meta_image": "/images/blaitlabs-logo.png",
+    "meta_description": "AI-powered, enterprise-grade SaaS and IT solutions from Blaitware—designed for growth and operational efficiency. CRM, workplace, hosting, healthcare, education, and custom technology."
   }
 }

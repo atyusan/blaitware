@@ -2,73 +2,70 @@
 title: Pricing
 layout: pricing
 draft: false
-description: Everything you need for best in class service
+description: Clear plans for the Blait suite and Bytstack. Vertical platforms and custom work are quoted with sales.
 plans:
-  - title: Basic Plan
-    subtitle: Best For Small Individuals
+  - title: Starter
+    subtitle: Best for small teams adopting Blait CRM or Desk
     price: 0
     type: month
     features:
-      - Express Service
-      - Customs Clearance
-      - Time-Critical Services
+      - Core Blait CRM or Blait Desk workspace
+      - Up to 3 users
+      - Email support
+      - Community onboarding resources
     button:
-      label: Get started for Free
+      label: Start free trial
       link: /get-demo
 
-  - title: Professional Plan
-    subtitle: Best For Professionals
+  - title: Growth
+    subtitle: Best for scaling sales, support, and workplace teams
     price: 49
     type: month
     recommended: true
     features:
-      - Express Service
-      - Customs Clearance
-      - Time-Critical Services
-      - Cloud Service
-      - Best Dashboard
+      - Blait CRM + Desk + Workplace essentials
+      - Nexora starter email campaigns
+      - Blait Analytics standard dashboards
+      - Priority email support
+      - Guided onboarding session
     button:
-      label: Get started
+      label: Get a demo
       link: /get-demo
 
-  - title: Business Plan
-    subtitle: Best For Large Individuals
+  - title: Business
+    subtitle: Best for multi-team organizations
     price: 199
     type: month
     features:
-      - Express Service
-      - Customs Clearance
-      - Time-Critical Services
+      - Full Blait suite access
+      - Advanced Analytics and automation
+      - Bytstack hosting credits
+      - Dedicated success manager
+      - SLA-backed support options
     button:
-      label: Get started
-      link: /get-demo
+      label: Talk to sales
+      link: /contact
 
-faq_title: Frequently Asked Questions
-faq_description: Vestibulum ante ipsum primis in faucibus orci luctus ultrices posuere cubilia Curae Donec
+faq_title: Pricing questions
+faq_description: Straightforward answers about our plans, vertical products, and services.
 faqs:
-  - title: How to change my billing information?
-    answer: You will be able to manage all projects through the platform. Once you insert your details and availability on the platform, you will be automatically assigned photoshoots when the place/date/time coincide with your data. All you’ll have to do is “accept” or “reject” the assignments before they expire, as well as their terms & conditions, and turn up at the given address on the right date/time. In addition, all updates and changes will be communicated through notifications on the platform.
+  - title: What is included in the Blait suite plans?
+    answer: Starter, Growth, and Business cover our horizontal products—Blait CRM, Desk, Workplace (with Nexora), Analytics, and Bytstack allowances on higher tiers. Exact module mix is confirmed during demo.
 
-  - title: Can I Use Bigspring with cloud documents?
-    answer: |
-      The Service is provided for free during this pilot project, and is provided “as is” with is not committed to any level of service or availability of the Service.
+  - title: How do Care-Sync and Edu-Core pricing work?
+    answer: Hospital and school platforms are scoped to institution size, modules, and deployment needs. Contact sales for a tailored quote—there is no self-serve checkout for these products.
 
-      A further If you enter into this agreement on behalf of a company, you hereby agree that the company is responsible under this Agreement for all actions and omissions
+  - title: Can I buy consulting or custom development on these plans?
+    answer: Custom websites, management systems, and infrastructure projects are priced separately. Many customers combine a SaaS plan with a fixed-scope delivery engagement from our team.
 
-  - title: If I cancel, can I archive my designs to keep them safe?
-    answer: |
-      A team of photography experts at will analyze your test and give you feedback and your results.
-
-      We don’t hand out grades like you would on a high school exam. Your test will either be accepted or rejected. In other words, you’ll either get a “passing grade” or you won’t.
-
-  - title: How can I adjust user permissions & admin provileges?
-    answer: We allows you to concentrate on snapping the pictures, while we take care of everything else. The platform automatically assigns photoshoots to you, depending on your availability, and allows you to upload all your work on it after completion. No muss no fuss!
+  - title: Is Bytstack available on its own?
+    answer: Yes. Website hosting on Bytstack can be purchased as part of Business or as a standalone hosting conversation with sales—especially when paired with custom site builds.
 
 call_to_action:
-  title: Need a larger plan?
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
+  title: Need Care-Sync, Edu-Core, or a custom build?
+  content: Vertical platforms and consulting engagements are quoted with our sales team so scope and compliance needs are clear upfront.
   button:
     enable: true
-    label: Contact Us
+    label: Contact sales
     link: /contact
 ---

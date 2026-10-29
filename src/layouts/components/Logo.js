@@ -25,18 +25,20 @@ const Logo = () => {
         <>
           <Image
             src={logo}
-            alt={title}
+            alt={title || "Blait Labs"}
             width={width * 2}
             height={height * 2}
             priority
+            unoptimized
             className="img-light h-full w-auto"
           />
           <Image
             src={logo_dark || logo}
-            alt={title}
+            alt={title || "Blait Labs"}
             width={width * 2}
             height={height * 2}
             priority
+            unoptimized
             className="img-dark h-full w-auto"
           />
         </>

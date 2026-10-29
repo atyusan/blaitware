@@ -1,17 +1,17 @@
 {
   "awab-husameldin": {
-    "name": "Awab Husameldin",
+    "name": "Amaka Eze",
     "avatar": "/images/avatar/03.jpg",
-    "bio": "Hic dolor cumque quod quas pariatur modi rerum qui consequatur, iusto inventore necessitatibus. Facilis quisquam magni, autem deleniti …"
+    "bio": "Engineering lead writing about product platforms, delivery practices, and building software for African and global teams."
   },
   "joseph-gonzalez": {
-    "name": "Joseph Gonzalez",
+    "name": "Chinedu Okoro",
     "avatar": "/images/avatar/04.jpg",
-    "bio": "Hic dolor cumque quod quas pariatur modi rerum qui consequatur, iusto inventore necessitatibus. Facilis quisquam magni, autem deleniti …"
+    "bio": "Head of Product. Focused on CRM, workplace tools, and vertical platforms like Care-Sync and Edu-Core."
   },
   "admin": {
-    "name": "Admin",
-    "avatar": "",
-    "bio": ""
+    "name": "Blait Labs",
+    "avatar": "/images/blaitlabs-icon.png",
+    "bio": "Official updates from our team—Blaitware’s technology practice."
   }
 }

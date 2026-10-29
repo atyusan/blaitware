@@ -1,74 +1,74 @@
 ---
-title: "Give Your Team The Design Mindset & Tools"
-description: "Create a best strategic tool, share it with your team and ensure it’s on track with intuitive dashboards. Simple enough with the flexibility Lorem ipsum dolor sit amet consectetur adipisicing elit."
+title: "Technology that runs the business and the team that delivers it"
+description: "We are Blaitware’s technology practice. We build AI-powered, enterprise-grade solutions designed for growth and operational efficiency and deliver end-to-end technology for organizations and businesses."
 layout: about
 image: /images/about/about.jpg
 draft: false
 
 founder:
-  name: Charles Dickens
-  designation: The Founder, Bigspring LLC
+  name: Blaitware Leadership
+  designation: Blaitware
   avatar: /images/avatar/founder.jpg
-  content: We’re changing how product managers, developers, and data scientists plan, track, and govern analytics across organizations. Before Avo, teams were forced to choose between product delivery speed and reliable insights.
+  content: We built this practice so businesses could buy modern software and still get accountable implementation—websites, systems, infrastructure, and hosting—from one Blaitware team.
 
 who_we_are:
-  title: Who we are?
+  title: Who we are
   content:
-    - We started in 2018 because we believe we can change the way organizations use data to make better decisions for their customers. We’ve been blown away by the impact BI has had on data quality and developer productivity for our customers.
-    - From startups to consumer it’s been incredible to see our product fundamentally change the way PMs, devs and data scientists collaborate to track and govern their analytics.
+    - We design and ship AI-powered, enterprise-grade products for CRM, customer support, workplace productivity, email marketing (Nexora), analytics, website hosting (Bytstack), hospital management (Care-Sync), and school management (Edu-Core)—built for growth and operational efficiency.
+    - Alongside the product suite, we deliver consulting and build services—custom websites, mobile and desktop apps, management systems, and IT infrastructure—so customers are not left stitching vendors together after the license is signed.
 
 mission:
   title: Our mission
   content:
-    - Companies have never had to understand their customers better or faster. Consumers choose the product with the best experience and companies can’t afford to stall product decisions while waiting days or weeks for answers from a centralized BI team.
-    - The industry gold standard has become to decentralize business intelligence, so that every team is autonomous in making data-driven decisions quickly.
+    - Innovating with purpose, we deliver intelligent, future-ready solutions that scale with your business and adapt to complexity.
+    - We make ambitious digital projects practical from first discovery workshop to production on infrastructure we help stand up and run.
 
 fun_facts:
-  - value: 80
-    suffix: "%"
+  - value: 8
+    suffix: "+"
     icon: FaFighterJet
     label_lines:
-      - Spend 80% less time
-      - on admin
-  - value: 40
-    suffix: x
+      - Product platforms
+      - across industries
+  - value: 1
+    suffix: ""
     icon: FaRegDotCircle
     label_lines:
-      - Attract 40x more
-      - the candidate
-  - value: 83
-    suffix: "%"
+      - Accountable partner
+      - for software and services
+  - value: 24
+    suffix: "/7"
     icon: FaDice
     label_lines:
-      - Reduce recruitment
-      - agency spend
-  - value: 40
+      - Support pathways
+      - for production systems
+  - value: 100
     suffix: "%"
     icon: FaDiceD6
     label_lines:
-      - Make hires 40%
-      - faster
+      - Focus on outcomes
+      - not slideware
 
 values:
   - title_lines:
-      - We care about
-      - our customers
+      - Customers before
+      - complexity
     icon: FaFileSignature
-    content: Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada praesent.
+    content: We recommend the smallest stack that solves the problem—whether that is a Blait product, a custom build, or both.
   - title_lines:
-      - Your design partner now
-      - and in the future
+      - Delivery you
+      - can measure
     icon: FaHandsHelping
-    content: Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada praesent.
+    content: Clear scopes, demos, and handovers. You always know what ships next and who owns it.
   - title_lines:
-      - Around the clock
-      - support from day one
+      - Local roots,
+      - global standards
     icon: FaHeadset
-    content: Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada praesent.
+    content: Abuja-based operations and a Nigeria datacenter presence, with products and practices built for international teams.
 
 office_culture:
-  title: Our Office Culture
-  content: Create a best strategic tool, share it with your team and ensure it’s on track with intuitive dashboards.
+  title: How we work
+  content: Cross-functional squads of product, engineering, and consulting collaborate so SaaS releases and client deliveries stay aligned.
   images:
     - /images/office-culture/01.jpg
     - /images/office-culture/02.jpg
@@ -78,10 +78,10 @@ office_culture:
     - /images/office-culture/07.jpg
 
 call_to_action:
-  title: Want to Join our Team?
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat eget amtempus eu at consecttur.
+  title: Want to build with us?
+  content: Explore open roles or talk with us about products and services for your organization.
   button:
     enable: true
-    label: View open Positions
+    label: View open positions
     link: /career
 ---

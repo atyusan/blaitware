@@ -1,61 +1,26 @@
 {
   "main": [
-    {
-      "name": "Home",
-      "url": "/"
-    },
-    {
-      "name": "Company",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        { "name": "About", "url": "/about" },
-        { "name": "Team", "url": "/team" },
-        { "name": "How It Works", "url": "/how-it-works" },
-        { "name": "Career", "url": "/career" },
-        { "name": "Career Details", "url": "/career/sr-executive-service-assurance" }
-      ]
-    },
+    { "name": "Home", "url": "/" },
+    { "name": "About us", "url": "/about" },
     {
       "name": "Products",
       "url": "",
       "hasChildren": true,
       "children": [
-        { "name": "CRM", "url": "/products/product-1", "subtitle": "Convert leads and close sales deals faster." },
-        { "name": "Help Desk", "url": "/products/product-2", "subtitle": "Software to deliver great customer support." },
-        { "name": "Workplace", "url": "/products/product-3", "subtitle": "Application built to improve productivity." },
-        { "name": "Analytics", "url": "/products/product-4", "subtitle": "Create custom reports from any data set." },
-        { "name": "View All Product", "url": "/products" }
+        { "name": "Blait CRM", "url": "/products/blait-crm", "subtitle": "Close deals faster." },
+        { "name": "Blait Desk", "url": "/products/blait-desk", "subtitle": "Omnichannel support inbox." },
+        { "name": "Blait Workplace", "url": "/products/blait-workplace", "subtitle": "Team productivity suite." },
+        { "name": "Nexora", "url": "/products/nexora", "subtitle": "Email marketing for Workplace." },
+        { "name": "Blait Analytics", "url": "/products/blait-analytics", "subtitle": "Dashboards from any data." },
+        { "name": "Bytstack", "url": "/products/bytstack", "subtitle": "PaaS for website hosting." },
+        { "name": "Care-Sync", "url": "/products/care-sync", "subtitle": "Hospital management SaaS." },
+        { "name": "Edu-Core", "url": "/products/edu-core", "subtitle": "School management SaaS." },
+        { "name": "View all products", "url": "/products" }
       ]
     },
-    {
-      "name": "Blog",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        { "name": "Blog Posts", "url": "/blogs" },
-        { "name": "Blog Details", "url": "/blogs/post-1" },
-        { "name": "Author", "url": "/author" },
-        { "name": "Author Details", "url": "/author/awab-husameldin" }
-      ]
-    },
-    {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        { "name": "Pricing", "url": "/pricing" },
-        { "name": "Case Studies", "url": "/case-studies" },
-        { "name": "Case Studies Details", "url": "/case-studies/case-1" },
-        { "name": "FAQ", "url": "/faq" },
-        { "name": "Privacy Policy", "url": "/privacy-policy" },
-        { "name": "Terms & Conditions", "url": "/terms-conditions" }
-      ]
-    },
-    {
-      "name": "Contact",
-      "url": "/contact"
-    }
+    { "name": "Services", "url": "/services" },
+    { "name": "Blog", "url": "/blogs" },
+    { "name": "Contact", "url": "/contact" }
   ],
   "footer": [
     {
@@ -63,17 +28,18 @@
       "menu": [
         { "text": "About Us", "url": "/about" },
         { "text": "Team", "url": "/team" },
-        { "text": "How It Works", "url": "/how-it-works" },
-        { "text": "Career", "url": "/career" }
+        { "text": "Career", "url": "/career" },
+        { "text": "Case Studies", "url": "/case-studies" }
       ]
     },
     {
-      "name": "Products",
+      "name": "Services",
       "menu": [
-        { "text": "CRM", "url": "/products/product-1" },
-        { "text": "Help Desk", "url": "/products/product-2" },
-        { "text": "Workplace", "url": "/products/product-3" },
-        { "text": "Analytics", "url": "/products/product-4" }
+        { "text": "All services", "url": "/services" },
+        { "text": "Custom websites", "url": "/services" },
+        { "text": "Mobile & desktop apps", "url": "/services" },
+        { "text": "Management systems", "url": "/services" },
+        { "text": "IT infrastructure", "url": "/services" }
       ]
     },
     {

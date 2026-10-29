@@ -9,8 +9,9 @@ import Providers from "@layouts/partials/Providers";
 import "../styles/style.css";
 
 export const metadata = {
-  title: "Bigspring",
-  description: "A modern SAAS business theme",
+  title: "Blait Labs",
+  description:
+    "Blait Labs — B2B SaaS products and IT consulting from Blaitware. CRM, workplace tools, hosting, healthcare, education, and custom technology solutions.",
 };
 
 export default function RootLayout({ children }) {

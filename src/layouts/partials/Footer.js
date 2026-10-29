@@ -20,8 +20,8 @@ const Footer = () => {
   const { copyright, footer_content } = config.params;
   const footer = dict.footer;
   const { logo, logo_dark, logo_width, logo_height, title } = config.site;
-  const width = Number(logo_width) || 180;
-  const height = Number(logo_height) || 39;
+  const width = Number(logo_width) || 160;
+  const height = Number(logo_height) || 52;
 
   return (
     <footer className="section bg-light pb-0">
@@ -29,13 +29,13 @@ const Footer = () => {
         <div className="row justify-center">
           <div className="col-12 xl:col-11">
             <div className="section pt-0">
-              <div className="row gap-y-8 gy-4">
+              <div className="row gy-4">
                 {footer.map((col) => (
                   <div className="col-12 sm:col-6 lg:col-3" key={col.name}>
-                    <div className="h5 mb-6">{col.name}</div>
+                    <div className="h5 mb-4">{col.name}</div>
                     <ul className="footer-list list-none">
                       {col.menu.map((item) => (
-                        <li key={item.text}>
+                        <li key={`${col.name}-${item.text}`}>
                           <Link
                             href={localizePath(item.url, locale)}
                             title={item.text}
@@ -47,28 +47,32 @@ const Footer = () => {
                     </ul>
                   </div>
                 ))}
-                <div className="col-12 sm:col-6 lg:col-3">
+                <div className="col-12 sm:col-6 lg:col-3 text-left">
                   <Link
                     href={localizePath("/", locale)}
-                    className="mb-4 block h5"
-                    aria-label={title || "Bigspring"}
+                    className="mb-3 inline-block"
+                    aria-label={title || "Blait Labs"}
                   >
                     <Image
                       src={logo}
                       width={width}
                       height={height}
-                      alt={title || "Bigspring"}
-                      className="img-light h-auto w-auto"
+                      alt={title || "Blait Labs"}
+                      unoptimized
+                      className="img-light"
+                      style={{ width: `${width}px`, height: "auto" }}
                     />
                     <Image
                       src={logo_dark || logo}
                       width={width}
                       height={height}
-                      alt={title || "Bigspring"}
-                      className="img-dark h-auto w-auto"
+                      alt={title || "Blait Labs"}
+                      unoptimized
+                      className="img-dark"
+                      style={{ width: `${width}px`, height: "auto" }}
                     />
                   </Link>
-                  {markdownify(footer_content, "p", "mb-6")}
+                  {markdownify(footer_content, "p", "mb-4 text-left")}
                   <Social source={social} className="social-icons" />
                 </div>
               </div>

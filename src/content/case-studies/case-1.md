@@ -1,6 +1,6 @@
 ---
-title: Google
-description: We are looking for a personal financial planning pro (Certified …
+title: Meridian Retail unifies sales and support
+description: Blait CRM and Blait Desk replaced fragmented tools for a multi-branch retailer.
 image: /images/case-studies/01.png
 draft: false
 weight: 1
@@ -8,28 +8,25 @@ weight: 1
 
 ##### Client
 
-We are looking for a personal financial planning pro (Certified Financial Planner™ preferred) who will lead our client advising efforts. You will be a fiduciary who works with clients providing holistic advice on areas including: saving, retirement, debt management, investments. You’ll be on the front lines helping clients in what is arguably the most important position at the company.
+Meridian Retail operates stores and an ecommerce channel across multiple cities. Sales and support data lived in spreadsheets and separate inboxes, slowing responses and forecasts.
 
 ##### Challenge
 
-We are especially interested in finding developers with experience either building web APIs with Go or experience with functional programming (e.g. Elixir, NodeJS, Clojure, F#). You might not have experience with all the technologies in our stack, but you are motivated to learn deeply. You will get the opportunity to work with both Go and Elixir with experienced team mates who can teach and pair with you to learn whatever you have less experience with.You care about security, code quality, scalability, performance, and simplicity. Above all, you seek operational excellence and apply the best engineering practices possible. Not everything that you or your team do can be perfect, but you make sure that you always know the trade-offs.
-
-![Google LLC is an American multinational technology company](/images/case-studies/case-1.jpg)
+Leadership needed a single customer view, clearer pipelines, and SLA-aware support without a multi-year ERP project.
 
 ##### Concept
 
-1. must keep passwords secure and confidential;
-2. are solely responsible for User Data and all activity in their account while using the Service;
-3. must use commercially reasonable efforts to prevent unauthorized access to their account, and notify Conclude promptly of any such unauthorized access; and
-4. may use the Service only in accordance with Conclude’s online user guide and all applicable laws and regulations.
+Adopt Blait CRM for pipeline and accounts, Blait Desk for omnichannel tickets, and a short onboarding engagement with our team for data migration and training.
+
+![Case study visual](/images/case-studies/01.png)
 
 ##### Solution
 
-- Enhance or improve User experience, our Site, or our Service.
-- Process transactions.
-- Send emails about our Site or respond to inquiries.
-- As this Privacy Policy and our Terms of Service.
+- Configured CRM stages to match Meridian’s sales motion
+- Migrated priority customer records and open tickets
+- Trained store and call-center leads in two waves
+- Connected weekly Analytics dashboards for leadership
 
 ##### Results
 
-We are looking for a personal financial planning pro (Certified Financial Planner™ preferred) who will lead our client advising efforts. You will be a fiduciary who works with clients providing holistic advice on areas including: saving, retirement, debt
+Average first-response time dropped, forecast meetings shortened, and support and sales finally shared the same customer timeline.

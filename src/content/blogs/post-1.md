@@ -1,163 +1,29 @@
 ---
-title: "Adversus is a web-based dialer and practical CRM solution"
-description: "Here is example of hedings. You can use this heading by following markdownify rules. For example: use `#` for heading 1 and use `######` for heading 6."
+title: "How Blait CRM and Desk create one customer view"
+description: "Sales and support often work from different systems. Here is how our customers unify pipelines and tickets without a multi-year ERP program."
 image: "/images/blog/post-1.jpg"
 author: "awab-husameldin"
-date: 2020-08-18T05:00:00Z
+date: 2024-03-12T05:00:00Z
 weight: 1
 draft: false
 ---
 
-Here is example of hedings. You can use this heading by following markdownify rules. For example: use `#` for heading 1 and use `######` for heading 6.
+Sales and support often work from different systems. Here is how our customers unify pipelines and tickets without a multi-year ERP program.
 
-## Heading 2
+## Why this matters
 
-### Heading 3
+Organizations adopting our products—or engaging us for websites, management systems, and infrastructure—need clarity on outcomes, ownership, and timelines. This article shares practical guidance from our product and consulting teams.
 
-#### Heading 4
+## What good looks like
 
-##### Heading 5
+- A clear problem statement tied to operational KPIs
+- A decision between configuring a Blait product, building custom software, or combining both
+- Staging environments, training, and a support path after go-live
 
-###### Heading 6
+## How we help
 
----
+As Blaitware’s technology practice, we pair SaaS platforms such as Blait CRM, Desk, Workplace, Nexora, Analytics, Bytstack, Care-Sync, and Edu-Core with delivery services so you are not left alone after the contract is signed.
 
-##### Emphasis
+## Next step
 
-The emphasis, aka italics, with _asterisks_ or _underscores_.
-
-Strong emphasis, aka bold, with **asterisks** or **underscores**.
-
-The combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough uses two tildes. ~~Scratch this.~~
-
----
-
-##### Link
-
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.themefisher.com
-[1]: https://gethugothemes.com
-[link text itself]: https://www.getjekyllthemes.com
-
----
-
-##### Paragraph
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
-
----
-
-##### Ordered List
-
-1. List item
-2. List item
-3. List item
-4. List item
-5. List item
-
----
-
-##### Unordered List
-
-- List item
-- List item
-- List item
-- List item
-- List item
-
----
-
-##### Code and Syntax Highlighting
-
-This is an `Inline code` sample.
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-```python
-s = "Python syntax highlighting"
-print s
-```
-
----
-
-##### Blockquote
-
-> This is a blockquote example.
-
----
-
-##### Inline HTML
-
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
-
----
-
-<Notice type="note">
-  <p>This is a simple note</p>
-</Notice>
-
-<Notice type="tip">
-  <p>This is a simple note</p>
-</Notice>
-
-<Notice type="info">
-  <p>This is a simple note</p>
-</Notice>
-
-<Notice type="warning">
-  <p>This is a simple note</p>
-</Notice>
-
----
-
-##### Tables
-
-| Tables        |      Are      |  Cool |
-| ------------- | :-----------: | ----: |
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      |   centered    |   $12 |
-| zebra stripes |   are neat    |    $1 |
-
-| Markdown | Less      | Pretty     |
-| -------- | --------- | ---------- |
-| _Still_  | `renders` | **nicely** |
-| 1        | 2         | 3          |
-
----
-
-##### Image
-
-![service](/images/service-slide-1.png "service")
-
----
-
-##### Youtube video
-
-<YoutubePlayer id="C0DPdy98e4c" title="YouTube Video" />
+[Book a demo](/get-demo) or [contact sales](/contact) to talk through your use case.

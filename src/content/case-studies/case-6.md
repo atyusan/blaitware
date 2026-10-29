@@ -1,6 +1,6 @@
 ---
-title: Iconosquare
-description: We are looking for a personal financial planning pro (Certified …
+title: CivicReach relaunches on a Blait-built site
+description: Custom website, Bytstack hosting, and Workplace for a nonprofit’s communications team.
 image: /images/case-studies/06.png
 draft: false
 weight: 6
@@ -8,28 +8,25 @@ weight: 6
 
 ##### Client
 
-We are looking for a personal financial planning pro (Certified Financial Planner™ preferred) who will lead our client advising efforts. You will be a fiduciary who works with clients providing holistic advice on areas including: saving, retirement, debt management, investments. You’ll be on the front lines helping clients in what is arguably the most important position at the company.
+CivicReach needed a modern public website and a better way for staff to collaborate on campaigns.
 
 ##### Challenge
 
-We are especially interested in finding developers with experience either building web APIs with Go or experience with functional programming (e.g. Elixir, NodeJS, Clojure, F#). You might not have experience with all the technologies in our stack, but you are motivated to learn deeply. You will get the opportunity to work with both Go and Elixir with experienced team mates who can teach and pair with you to learn whatever you have less experience with.You care about security, code quality, scalability, performance, and simplicity. Above all, you seek operational excellence and apply the best engineering practices possible. Not everything that you or your team do can be perfect, but you make sure that you always know the trade-offs.
-
-![Iconosquare case study](/images/case-studies/case-1.jpg)
+An outdated site hurt credibility; internal files and email threads made campaign coordination fragile.
 
 ##### Concept
 
-1. must keep passwords secure and confidential;
-2. are solely responsible for User Data and all activity in their account while using the Service;
-3. must use commercially reasonable efforts to prevent unauthorized access to their account, and notify Conclude promptly of any such unauthorized access; and
-4. may use the Service only in accordance with Conclude’s online user guide and all applicable laws and regulations.
+We designed and built a new website, hosted it on Bytstack, and onboarded the team to Blait Workplace with Nexora for supporter emails.
+
+![Case study visual](/images/case-studies/06.png)
 
 ##### Solution
 
-- Enhance or improve User experience, our Site, or our Service.
-- Process transactions.
-- Send emails about our Site or respond to inquiries.
-- As this Privacy Policy and our Terms of Service.
+- Content and UX discovery with stakeholders
+- Accessible marketing site build
+- Bytstack production deploy with staging
+- Workplace + Nexora training for communications
 
 ##### Results
 
-We are looking for a personal financial planning pro (Certified Financial Planner™ preferred) who will lead our client advising efforts. You will be a fiduciary who works with clients providing holistic advice on areas including: saving, retirement, debt
+The organization launched on schedule with a maintainable site and a single workplace for campaign execution.

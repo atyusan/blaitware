@@ -1,25 +1,29 @@
 ---
-title: "Adversus is a web-based dialer and practical CRM solution"
-description: "Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis Senectus feugiat faucibus commodo egestas leo vitae in morbi. Enim arcu dignissim mauris, eu, eget"
+title: "Care-Sync implementation lessons from Horizon Clinics"
+description: "Hospital software only works when clinical and admin workflows are respected. Notes from a Care-Sync rollout with local delivery from our team."
 image: "/images/blog/post-4.jpg"
 author: "joseph-gonzalez"
-date: 2020-05-18T05:00:00Z
-weight: 6
+date: 2024-06-09T05:00:00Z
+weight: 4
 draft: false
 ---
 
-Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis Senectus feugiat faucibus commodo egestas leo vitae in morbi. Enim arcu dignissim mauris, eu, eget
+Hospital software only works when clinical and admin workflows are respected. Notes from a Care-Sync rollout with local delivery from our team.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec et ipsum ullamcorper venenatis fringilla. Pretium, purus eu nec vulputate vel habitant egestas. Congue ornare at ipsum, viverra. Vitae magna faucibus eros, lectus sociis. Etiam nunc amet id dignissim. Feugiat id tempor vel sit in ornare turpis posuere. Eu quisque integer non rhoncus elementum vel. Quis nec viverra lectus augue nec praesent
+## Why this matters
 
-Pharetra odio amet pellentesque. Egestas nisi adipiscing sed in lectus. Vitae ultrices malesuada aliquet Faucibus consectetur tempus adipiscing vitae. Nec blandit tincidunt nibh nisi, quam volutpat. In lacus laoreet diam risus. Mauris, risus faucibus sagittis sagittis tincidunt id justo. Diam massa pretium consequat mauris viverra. Sagittis eu libero
+Organizations adopting our products—or engaging us for websites, management systems, and infrastructure—need clarity on outcomes, ownership, and timelines. This article shares practical guidance from our product and consulting teams.
 
-> Facing a challenge in life is kind of a turn-on for an easy rider. When life gives you lemons, use them in your designs
->
-> Alexender Smith
+## What good looks like
 
-Consectetur adipiscing elit. Nec et ipsum ullamcorper venenatis fringilla. Pretium, purus eu nec vulputate vel habitant egestas. Congue ornare at ipsum, viverra. Vitae magna faucibus eros, lectus sociis. Etiam nunc amet id dignissim. Feugiat id tempor vel sit in ornare turpis posuere. Eu quisque integer non rhoncus elementum vel. Quis nec viverra lectus augue nec praesent volutpat tortor. Ipsum eget sed tempus luctus nisl. Ut etiam molestie mattis at faucibus mi at pellentesque. Pellentesque morbi nunc, curabitur arcu euismod suscipit. Duis mi sapien, donec non dictum
+- A clear problem statement tied to operational KPIs
+- A decision between configuring a Blait product, building custom software, or combining both
+- Staging environments, training, and a support path after go-live
 
-Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis cursus id.
+## How we help
 
-Senectus feugiat faucibus commodo egestas leo vitae in morbi. Enim arcu dignissim mauris, eu, eget pharetra odio amet pellentesque. Egestas nisi adipiscing sed in lectus. Vitae ultrices malesuada aliquet dignissim. Faucibus non tristique eu.
+As Blaitware’s technology practice, we pair SaaS platforms such as Blait CRM, Desk, Workplace, Nexora, Analytics, Bytstack, Care-Sync, and Edu-Core with delivery services so you are not left alone after the contract is signed.
+
+## Next step
+
+[Book a demo](/get-demo) or [contact sales](/contact) to talk through your use case.

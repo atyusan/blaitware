@@ -15,17 +15,25 @@ import { usePathname, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import {
   FaArrowRight,
+  FaBriefcaseMedical,
   FaChartBar,
-  FaDiceD6,
+  FaEnvelopeOpenText,
+  FaGraduationCap,
+  FaHeadset,
   FaLaptopHouse,
+  FaServer,
   FaUsers,
 } from "react-icons/fa";
 
 const icons = {
   FaUsers,
-  FaDiceD6,
+  FaHeadset,
   FaLaptopHouse,
+  FaEnvelopeOpenText,
   FaChartBar,
+  FaServer,
+  FaBriefcaseMedical,
+  FaGraduationCap,
   FaArrowRight,
 };
 

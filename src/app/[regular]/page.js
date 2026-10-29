@@ -7,6 +7,7 @@ import GetDemo from "@layouts/GetDemo";
 import HowItWorks from "@layouts/HowItWorks";
 import Pricing from "@layouts/Pricing";
 import SeoMeta from "@layouts/SeoMeta";
+import Services from "@layouts/Services";
 import Team from "@layouts/Team";
 import { getRegularPage, getSinglePage } from "@lib/contentParser";
 
@@ -43,6 +44,8 @@ const RegularPages = async ({ params }) => {
         <HowItWorks data={regularPageData} />
       ) : layout === "get-demo" ? (
         <GetDemo data={regularPageData} />
+      ) : layout === "services" ? (
+        <Services data={regularPageData} />
       ) : (
         <Default data={regularPageData} />
       )}

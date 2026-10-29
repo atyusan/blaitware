@@ -1,0 +1,5 @@
+company: Blaitware
+website: blait-labs
+phone: +2347066009943
+email: hello@blaitlabs.com
+address: 3 Barr P.I Oyewole Str, News engineering, Abuja
