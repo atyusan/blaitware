@@ -8,7 +8,7 @@
     "2xl", "1320px";
 }
 
-@import "./generated-theme.css";
+@import "./theme.css";
 
 @import "./base.css" layer(base);
 

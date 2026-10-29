@@ -1,5 +1,4 @@
 import config from "@config/config.json";
-import theme from "@config/theme.json";
 import CookieConsent from "@layouts/components/CookieConsent";
 import OrganizationJsonLd from "@layouts/components/OrganizationJsonLd";
 import Preloader from "@layouts/components/Preloader";
@@ -9,7 +8,22 @@ import Header from "@layouts/partials/Header";
 import Providers from "@layouts/partials/Providers";
 import { absoluteUrl, getSiteUrl } from "@lib/seo";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { Poppins, Urbanist } from "next/font/google";
 import "../styles/style.css";
+
+const urbanist = Urbanist({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-urbanist",
+  display: "swap",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-poppins",
+  display: "swap",
+});
 
 const siteUrl = getSiteUrl();
 const defaultDescription = config.metadata.meta_description;
@@ -44,10 +58,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const pf = theme.fonts.font_family.primary;
-  const sf = theme.fonts.font_family.secondary;
   return (
-    <html suppressHydrationWarning lang="en">
+    <html
+      suppressHydrationWarning
+      lang="en"
+      className={`${urbanist.variable} ${poppins.variable}`}
+    >
       {config.google_tag_manager.enable && (
         <GoogleTagManager gtmId={config.google_tag_manager.gtm_id} />
       )}
@@ -55,17 +71,6 @@ export default function RootLayout({ children }) {
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5"
-        />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href={`https://fonts.googleapis.com/css2?family=${pf}${
-            sf ? "&family=" + sf : ""
-          }&display=swap`}
-          rel="stylesheet"
         />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta
