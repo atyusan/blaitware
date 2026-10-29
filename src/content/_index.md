@@ -72,8 +72,8 @@ services:
       enable: true
       label: Learn about Bytstack
       link: /products/bytstack
-  - title: The technology side of Blaitware
-    content: We are Blaitware’s technology practice—combining product craft with enterprise delivery so you are not left stitching vendors together.
+  - title: One partner for software and delivery
+    content: We combine product craft with enterprise delivery so you are not left stitching vendors together.
     images:
       - /images/services/service-3.png
     button:

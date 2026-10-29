@@ -1,7 +1,21 @@
 import CaseSingle from "@layouts/CaseSingle";
-import SeoMeta from "@layouts/SeoMeta";
 import { getSinglePage } from "@lib/contentParser";
+import { buildPageMetadata } from "@lib/seo";
 import { notFound } from "next/navigation";
+
+export async function generateMetadata({ params }) {
+  const { single } = await params;
+  const item = getSinglePage("src/content/case-studies").find(
+    (c) => c.slug === single,
+  );
+  if (!item) return {};
+  return buildPageMetadata({
+    title: item.frontmatter.title,
+    description: item.frontmatter.description,
+    image: item.frontmatter.image,
+    path: `/case-studies/${single}`,
+  });
+}
 
 const CaseDetail = async ({ params }) => {
   const { single } = await params;
@@ -16,15 +30,7 @@ const CaseDetail = async ({ params }) => {
   const nextCase =
     currentIndex < cases.length - 1 ? cases[currentIndex + 1] : null;
 
-  return (
-    <>
-      <SeoMeta
-        title={item.frontmatter.title}
-        description={item.frontmatter.description}
-      />
-      <CaseSingle data={item} prevCase={prevCase} nextCase={nextCase} />
-    </>
-  );
+  return <CaseSingle data={item} prevCase={prevCase} nextCase={nextCase} />;
 };
 
 export default CaseDetail;

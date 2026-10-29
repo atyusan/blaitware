@@ -4,11 +4,11 @@ layout: default
 draft: false
 ---
 
-This Privacy Policy describes how **Blait Labs** (a division of **Blaitware**) collects, uses, and protects information when you use blait-labs websites, product demos, and related services.
+This Privacy Policy describes how **Blaitware** collects, uses, and protects information when you use blaitware.org, product demos, and related services.
 
 ##### Who we are
 
-We operate from Abuja. Contact us at [hello@blaitlabs.com](mailto:hello@blaitlabs.com) or +2347066009943 regarding privacy questions.
+We operate from Abuja. Contact us at [hello@blaitware.org](mailto:hello@blaitware.org) or +2347066009943 regarding privacy questions.
 
 ##### Information we collect
 
@@ -28,7 +28,7 @@ We retain information only as long as needed for the purposes above or as requir
 
 ##### Your choices
 
-You may request access, correction, or deletion of personal information we hold about you by emailing hello@blaitlabs.com. You may also unsubscribe from marketing emails using links in those messages.
+You may request access, correction, or deletion of personal information we hold about you by emailing hello@blaitware.org. You may also unsubscribe from marketing emails using links in those messages.
 
 ##### Cookies
 
@@ -40,6 +40,6 @@ We may update this policy from time to time. Continued use of the site after cha
 
 ##### Contact
 
-Blait Labs / Blaitware  
+Blaitware  
 3 Barr P.I Oyewole Str, News engineering, Abuja  
-[hello@blaitlabs.com](mailto:hello@blaitlabs.com) · +2347066009943
+[hello@blaitware.org](mailto:hello@blaitware.org) · +2347066009943

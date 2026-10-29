@@ -1,19 +1,25 @@
 import authors from "@config/authors.json";
 import AuthorSingle from "@layouts/AuthorSingle";
-import SeoMeta from "@layouts/SeoMeta";
+import { buildPageMetadata } from "@lib/seo";
 import { notFound } from "next/navigation";
+
+export async function generateMetadata({ params }) {
+  const { single } = await params;
+  const author = authors[single];
+  if (!author || single === "admin") return {};
+  return buildPageMetadata({
+    title: author.name,
+    description: author.bio || `Posts by ${author.name}`,
+    path: `/author/${single}`,
+  });
+}
 
 const AuthorDetail = async ({ params }) => {
   const { single } = await params;
   const author = authors[single];
   if (!author || single === "admin") return notFound();
 
-  return (
-    <>
-      <SeoMeta title={author.name} description={`Posts by ${author.name}`} />
-      <AuthorSingle authorKey={single} />
-    </>
-  );
+  return <AuthorSingle authorKey={single} />;
 };
 
 export default AuthorDetail;

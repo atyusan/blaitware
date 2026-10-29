@@ -22,7 +22,7 @@ Organizations adopting our products—or engaging us for websites, management sy
 
 ## How we help
 
-As Blaitware’s technology practice, we pair SaaS platforms such as Blait CRM, Desk, Workplace, Nexora, Analytics, Bytstack, Care-Sync, and Edu-Core with delivery services so you are not left alone after the contract is signed.
+At Blaitware, we pair SaaS platforms such as Blait CRM, Desk, Workplace, Nexora, Analytics, Bytstack, Care-Sync, and Edu-Core with delivery services so you are not left alone after the contract is signed.
 
 ## Next step
 

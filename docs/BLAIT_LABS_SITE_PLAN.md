@@ -1,27 +1,27 @@
-# Blait Labs site plan
+# Blaitware site plan
 
-Durable build brief for the Blait Labs marketing site (Blaitware IT division).
+Durable build brief for the Blaitware marketing site.
 
 ## Brand
 
 | Layer | Value |
 |-------|--------|
-| Legal company | **Blaitware** (copyright, privacy/terms). Blait Labs is Blaitware’s technology practice—not a subsidiary. |
-| Site brand | **Blait Labs** |
-| Domain framing | blait-labs |
-| Email | hello@blaitlabs.com |
+| Legal company / site brand | **Blaitware** (copyright, privacy/terms, public brand) |
+| Site brand | **Blaitware** |
+| Domain | blaitware.org |
+| Email | hello@blaitware.org |
 | Phone | +2347066009943 |
 | Address | 3 Barr P.I Oyewole Str, News engineering, Abuja |
 | Positioning | AI-powered, enterprise-grade solutions designed for growth and operational efficiency; global B2B SaaS + end-to-end IT solutions/consulting; regional ops + datacenter |
 
-Contact source: `blaitlabs-info.txt`.
+Contact source: `blaitlabs-info.txt` (fields updated for Blaitware).
 
 ## Brand assets
 
 | Role | Path | Usage |
 |------|------|--------|
-| Light logo | `public/images/blaitlabs-logo.png` | Header light mode |
-| Dark logo | `public/images/blaitlabs-logo-dark.png` | Header dark mode |
+| Light logo | `public/images/blaitware-logo.png` | Header light mode |
+| Dark logo | `public/images/blaitware-logo-dark.png` | Header dark mode |
 | Favicon | `public/images/blaitlabs-icon.png` | Browser tab |
 
 ## Product catalog

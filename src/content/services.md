@@ -1,6 +1,6 @@
 ---
 title: Your Vision, Our Expertise
-description: Technology services that ship – Together, we bring ideas to life with tailored solutions that deliver real results. Let’s build something amazing.
+description: Technology services that ship. Together, we bring ideas to life with tailored solutions that deliver real results. Let’s build something amazing.
 layout: services
 draft: false
 button:
@@ -10,14 +10,14 @@ button:
 offerings:
   - icon: FaCode
     title: Custom websites
-    content: Marketing sites, portals, and web apps designed to convert and perform—built for your brand and hosted on Bytstack when you want a single accountable partner.
+    content: Marketing sites, portals, and web apps designed to convert and perform, built for your brand and hosted on Bytstack when you want a single accountable partner.
     points:
       - Product and marketing websites
       - Customer and partner portals
       - Performance, SEO, and accessibility-minded builds
   - icon: FaMobileAlt
     title: Mobile & desktop apps
-    content: Native and cross-platform applications for the devices your teams and customers already use—designed to integrate with your systems and our product suite.
+    content: Native and cross-platform applications for the devices your teams and customers already use, designed to integrate with your systems and our product suite.
     points:
       - iOS and Android mobile apps
       - Desktop apps for Windows and macOS
@@ -38,7 +38,7 @@ offerings:
       - Monitoring, backups, and handover documentation
   - icon: FaServer
     title: Hosting & platform operations
-    content: Run production workloads with our guidance—including Bytstack for websites and advisory around datacenter-backed hosting.
+    content: Run production workloads with our guidance including Bytstack for websites and advisory around datacenter-backed hosting.
     points:
       - Bytstack PaaS deployments
       - Environment strategy (dev, staging, production)
@@ -53,7 +53,7 @@ datacenter:
     - International-ready products used by teams worldwide
 cta:
   title: Need software and the team to implement it?
-  content: We combine product platforms with consulting delivery—so you are not left stitching vendors together.
+  content: We combine product platforms with consulting delivery so you are not left stitching vendors together.
   button:
     enable: true
     label: Contact us

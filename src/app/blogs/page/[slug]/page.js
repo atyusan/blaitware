@@ -1,10 +1,26 @@
 import Pagination from "@components/Pagination";
 import config from "@config/config.json";
-import SeoMeta from "@layouts/SeoMeta";
 import { getListPage, getSinglePage } from "@lib/contentParser";
+import { buildPageMetadata } from "@lib/seo";
 import { markdownify } from "@lib/utils/textConverter";
 import Posts from "@partials/Posts";
 const { blog_folder } = config.settings;
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const currentPage = parseInt(slug || 1, 10);
+  const postIndex = await getListPage(`src/content/${blog_folder}/_index.md`);
+  const { title, description } = postIndex.frontmatter;
+  const path =
+    currentPage <= 1 ? `/${blog_folder}` : `/${blog_folder}/page/${currentPage}`;
+
+  return buildPageMetadata({
+    title:
+      currentPage <= 1 ? title : `${title} — Page ${currentPage}`,
+    description,
+    path,
+  });
+}
 
 // blog pagination
 const BlogPagination = async ({ params }) => {
@@ -27,7 +43,6 @@ const BlogPagination = async ({ params }) => {
 
   return (
     <>
-      <SeoMeta title={title} description={description} />
       <section className="section pb-0">
         <div className="container text-center">
           <div className="row">

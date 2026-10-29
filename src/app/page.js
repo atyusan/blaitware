@@ -1,6 +1,5 @@
 import config from "@config/config.json";
 import Cta from "@layouts/components/Cta";
-import SeoMeta from "@layouts/SeoMeta";
 import Brands from "@layouts/partials/Brands";
 import HomeBanner from "@layouts/partials/HomeBanner";
 import HomeFeatures from "@layouts/partials/HomeFeatures";
@@ -9,7 +8,15 @@ import Testimonials from "@layouts/partials/Testimonials";
 import Tools from "@layouts/partials/Tools";
 import VideoBlock from "@layouts/partials/VideoBlock";
 import Workflow from "@layouts/partials/Workflow";
+import { buildPageMetadata } from "@lib/seo";
 import { getListPage } from "../lib/contentParser";
+
+export const generateMetadata = () =>
+  buildPageMetadata({
+    title: config.site.title,
+    description: config.metadata.meta_description,
+    path: "/",
+  });
 
 const Home = async () => {
   const homePage = await getListPage("src/content/_index.md");
@@ -25,11 +32,9 @@ const Home = async () => {
     workflow,
     call_to_action,
   } = frontmatter;
-  const { title } = config.site;
 
   return (
     <>
-      <SeoMeta title={title} />
       <HomeBanner banner={banner} />
       <Brands brands={brands} />
       <HomeFeatures feature={feature} />

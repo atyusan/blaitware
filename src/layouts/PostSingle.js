@@ -10,7 +10,6 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
-import SeoMeta from "./SeoMeta";
 import MDXContent from "@/app/helper/MDXContent";
 
 const formatDate = (date) =>
@@ -26,8 +25,7 @@ const readingTime = (content = "") => {
 };
 
 const PostSingle = ({ frontmatter, content }) => {
-  let { description, title, image, author, date } = frontmatter;
-  description = description ? description : content.slice(0, 120);
+  const { title, image, author, date } = frontmatter;
   const authorKey = author;
   const authorData = authors[author] || {
     name: author || "Admin",
@@ -39,7 +37,6 @@ const PostSingle = ({ frontmatter, content }) => {
 
   return (
     <>
-      <SeoMeta title={title} description={description} />
       <section className="section">
         <div className="container">
           <div className="row">
@@ -117,7 +114,7 @@ const PostSingle = ({ frontmatter, content }) => {
                 )}
               </div>
 
-              {markdownify(title, "h2", "h3 post-single-title")}
+              {markdownify(title, "h1", "h3 post-single-title")}
 
               <div className="content post-single-content">
                 <TableOfContents content={content} />

@@ -25,7 +25,7 @@ const Logo = () => {
         <>
           <Image
             src={logo}
-            alt={title || "Blait Labs"}
+            alt={title || "Blaitware"}
             width={width * 2}
             height={height * 2}
             priority
@@ -34,7 +34,7 @@ const Logo = () => {
           />
           <Image
             src={logo_dark || logo}
-            alt={title || "Blait Labs"}
+            alt={title || "Blaitware"}
             width={width * 2}
             height={height * 2}
             priority

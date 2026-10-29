@@ -1,7 +1,21 @@
 import ProductSingle from "@layouts/ProductSingle";
-import SeoMeta from "@layouts/SeoMeta";
 import { getSinglePage } from "@lib/contentParser";
+import { buildPageMetadata } from "@lib/seo";
 import { notFound } from "next/navigation";
+
+export async function generateMetadata({ params }) {
+  const { single } = await params;
+  const product = getSinglePage("src/content/products").find(
+    (item) => item.slug === single,
+  );
+  if (!product) return {};
+  return buildPageMetadata({
+    title: product.frontmatter.title,
+    description: product.frontmatter.description,
+    image: product.frontmatter.image,
+    path: `/products/${single}`,
+  });
+}
 
 const ProductDetail = async ({ params }) => {
   const { single } = await params;
@@ -9,15 +23,7 @@ const ProductDetail = async ({ params }) => {
   const product = products.find((item) => item.slug === single);
   if (!product) return notFound();
 
-  return (
-    <>
-      <SeoMeta
-        title={product.frontmatter.title}
-        description={product.frontmatter.description}
-      />
-      <ProductSingle data={product} />
-    </>
-  );
+  return <ProductSingle data={product} />;
 };
 
 export default ProductDetail;

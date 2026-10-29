@@ -4,11 +4,11 @@ layout: default
 draft: false
 ---
 
-These Terms & Conditions govern use of the **Blait Labs** website and related marketing materials operated by **Blaitware**. Product subscriptions and consulting engagements are governed by their respective order forms or statements of work.
+These Terms & Conditions govern use of the **Blaitware** website and related marketing materials. Product subscriptions and consulting engagements are governed by their respective order forms or statements of work.
 
 ##### Acceptance
 
-By accessing blait-labs sites you agree to these terms. If you do not agree, do not use the site.
+By accessing Blaitware sites you agree to these terms. If you do not agree, do not use the site.
 
 ##### Services described
 
@@ -24,7 +24,7 @@ You may not misuse the site, attempt unauthorized access, disrupt services, scra
 
 ##### Intellectual property
 
-Site content, trademarks, and brand assets are owned by Blaitware / Blait Labs or licensors. You may not copy or reuse them without permission except for fair personal reference.
+Site content, trademarks, and brand assets are owned by Blaitware or licensors. You may not copy or reuse them without permission except for fair personal reference.
 
 ##### Disclaimer
 
@@ -32,7 +32,7 @@ The website is provided “as is.” To the fullest extent permitted by law, Bla
 
 ##### Limitation of liability
 
-To the fullest extent permitted by law, Blaitware and Blait Labs are not liable for indirect, incidental, or consequential damages arising from site use. Liability for product or consulting services is defined in the applicable customer agreement.
+To the fullest extent permitted by law, Blaitware is not liable for indirect, incidental, or consequential damages arising from site use. Liability for product or consulting services is defined in the applicable customer agreement.
 
 ##### Governing law
 
@@ -40,5 +40,5 @@ These terms are governed by the laws of the Federal Republic of Nigeria, without
 
 ##### Contact
 
-Questions about these terms: [hello@blaitlabs.com](mailto:hello@blaitlabs.com) · +2347066009943  
+Questions about these terms: [hello@blaitware.org](mailto:hello@blaitware.org) · +2347066009943  
 3 Barr P.I Oyewole Str, News engineering, Abuja

@@ -9,7 +9,7 @@ draft: false
 
 #### About the role
 
-Scope integrations, demos, and technical proposals for our prospects. You will work with product, engineering, and consulting teammates—on-site and remotely—as part of Blaitware’s technology practice.
+Scope integrations, demos, and technical proposals for our prospects. You will work with product, engineering, and consulting teammates—on-site and remotely—as part of the Blaitware team.
 
 #### Why join us
 
@@ -33,4 +33,4 @@ Scope integrations, demos, and technical proposals for our prospects. You will w
 
 #### How to apply
 
-Email [hello@blaitlabs.com](mailto:hello@blaitlabs.com) with your CV and a short note on the role you want. Include links to work samples when relevant.
+Email [hello@blaitware.org](mailto:hello@blaitware.org) with your CV and a short note on the role you want. Include links to work samples when relevant.

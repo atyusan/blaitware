@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="row justify-center">
           <div className="col-12 xl:col-11">
             <div className="section pt-0">
-              <div className="row gy-4">
+              <div className="footer-grid row">
                 {footer.map((col) => (
                   <div className="col-12 sm:col-6 lg:col-3" key={col.name}>
                     <div className="h5 mb-4">{col.name}</div>
@@ -51,13 +51,13 @@ const Footer = () => {
                   <Link
                     href={localizePath("/", locale)}
                     className="mb-3 inline-block"
-                    aria-label={title || "Blait Labs"}
+                    aria-label={title || "Blaitware"}
                   >
                     <Image
                       src={logo}
                       width={width}
                       height={height}
-                      alt={title || "Blait Labs"}
+                      alt={title || "Blaitware"}
                       unoptimized
                       className="img-light"
                       style={{ width: `${width}px`, height: "auto" }}
@@ -66,7 +66,7 @@ const Footer = () => {
                       src={logo_dark || logo}
                       width={width}
                       height={height}
-                      alt={title || "Blait Labs"}
+                      alt={title || "Blaitware"}
                       unoptimized
                       className="img-dark"
                       style={{ width: `${width}px`, height: "auto" }}

@@ -7,7 +7,7 @@ info:
   description: Reach us for demos, pricing, Care-Sync or Edu-Core evaluations, custom websites and systems, or infrastructure and hosting questions. Our team will respond promptly.
   contacts:
     - "Phone: +2347066009943"
-    - "Mail: [hello@blaitlabs.com](mailto:hello@blaitlabs.com)"
+    - "Mail: [hello@blaitware.org](mailto:hello@blaitware.org)"
     - "Address: 3 Barr P.I Oyewole Str, News engineering, Abuja"
 ---
 

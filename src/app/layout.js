@@ -1,17 +1,46 @@
 import config from "@config/config.json";
 import theme from "@config/theme.json";
 import CookieConsent from "@layouts/components/CookieConsent";
+import OrganizationJsonLd from "@layouts/components/OrganizationJsonLd";
 import Preloader from "@layouts/components/Preloader";
 import TwSizeIndicator from "@layouts/components/TwSizeIndicator";
 import Footer from "@layouts/partials/Footer";
 import Header from "@layouts/partials/Header";
 import Providers from "@layouts/partials/Providers";
+import { absoluteUrl, getSiteUrl } from "@lib/seo";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "../styles/style.css";
 
+const siteUrl = getSiteUrl();
+const defaultDescription = config.metadata.meta_description;
+const defaultImage = absoluteUrl(config.metadata.meta_image);
+
 export const metadata = {
-  title: "Blait Labs",
-  description:
-    "Blait Labs — B2B SaaS products and IT consulting from Blaitware. CRM, workplace tools, hosting, healthcare, education, and custom technology solutions.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: config.site.title,
+    template: `%s | ${config.site.title}`,
+  },
+  description: defaultDescription,
+  authors: [{ name: config.metadata.meta_author }],
+  icons: {
+    icon: config.site.favicon,
+    shortcut: config.site.favicon,
+  },
+  openGraph: {
+    type: "website",
+    siteName: config.site.title,
+    title: config.site.title,
+    description: defaultDescription,
+    url: siteUrl,
+    images: [{ url: defaultImage }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: config.site.title,
+    description: defaultDescription,
+    images: [defaultImage],
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -19,23 +48,14 @@ export default function RootLayout({ children }) {
   const sf = theme.fonts.font_family.secondary;
   return (
     <html suppressHydrationWarning lang="en">
-      {/* google tag manager */}
       {config.google_tag_manager.enable && (
         <GoogleTagManager gtmId={config.google_tag_manager.gtm_id} />
       )}
       <head>
-        {/* responsive meta */}
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5"
         />
-
-        {/* favicon */}
-        <link rel="shortcut icon" href={config.site.favicon} />
-        {/* theme meta */}
-        <meta name="theme-name" content="andromeda-light-nextjs" />
-
-        {/* google font css */}
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
@@ -47,9 +67,6 @@ export default function RootLayout({ children }) {
           }&display=swap`}
           rel="stylesheet"
         />
-
-        {/* theme meta */}
-        <meta name="theme-name" content="andromeda-light-nextjs" />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta
           name="theme-color"
@@ -61,6 +78,7 @@ export default function RootLayout({ children }) {
           media="(prefers-color-scheme: dark)"
           content="#000"
         />
+        <OrganizationJsonLd />
       </head>
       <body suppressHydrationWarning>
         <TwSizeIndicator />

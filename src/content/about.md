@@ -1,6 +1,6 @@
 ---
 title: "Technology that runs the business and the team that delivers it"
-description: "We are Blaitware’s technology practice. We build AI-powered, enterprise-grade solutions designed for growth and operational efficiency and deliver end-to-end technology for organizations and businesses."
+description: "We are Blaitware. We build AI-powered, enterprise-grade solutions designed for growth and operational efficiency and deliver end-to-end technology for organizations and businesses."
 layout: about
 image: /images/about/about.jpg
 draft: false
@@ -9,7 +9,7 @@ founder:
   name: Blaitware Leadership
   designation: Blaitware
   avatar: /images/avatar/founder.jpg
-  content: We built this practice so businesses could buy modern software and still get accountable implementation—websites, systems, infrastructure, and hosting—from one Blaitware team.
+  content: We built Blaitware so businesses could buy modern software and still get accountable implementation—websites, systems, infrastructure, and hosting—from one accountable team.
 
 who_we_are:
   title: Who we are

@@ -9,7 +9,7 @@ draft: false
 
 #### About the role
 
-Design APIs and services that power Blait CRM, Desk, Analytics, and vertical platforms. You will work with product, engineering, and consulting teammates—on-site and remotely—as part of Blaitware’s technology practice.
+Design APIs and services that power Blait CRM, Desk, Analytics, and vertical platforms. You will work with product, engineering, and consulting teammates—on-site and remotely—as part of the Blaitware team.
 
 #### Why join us
 
@@ -33,4 +33,4 @@ Design APIs and services that power Blait CRM, Desk, Analytics, and vertical pla
 
 #### How to apply
 
-Email [hello@blaitlabs.com](mailto:hello@blaitlabs.com) with your CV and a short note on the role you want. Include links to work samples when relevant.
+Email [hello@blaitware.org](mailto:hello@blaitware.org) with your CV and a short note on the role you want. Include links to work samples when relevant.

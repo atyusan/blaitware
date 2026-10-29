@@ -1,13 +1,13 @@
 {
   "site": {
-    "title": "Blait Labs",
-    "base_url": "/",
+    "title": "Blaitware",
+    "base_url": "https://blaitware.org",
     "favicon": "/images/blaitlabs-icon.png",
-    "logo": "/images/blaitlabs-logo.png",
-    "logo_dark": "/images/blaitlabs-logo-dark.png",
-    "logo_width": "170",
+    "logo": "/images/blaitware-logo.png",
+    "logo_dark": "/images/blaitware-logo-dark.png",
+    "logo_width": "180",
     "logo_height": "58",
-    "logo_text": "Blait Labs"
+    "logo_text": "Blaitware"
   },
 
   "settings": {
@@ -34,8 +34,8 @@
   },
 
   "metadata": {
-    "meta_author": "Blait Labs",
-    "meta_image": "/images/blaitlabs-logo.png",
-    "meta_description": "AI-powered, enterprise-grade SaaS and IT solutions from Blaitware—designed for growth and operational efficiency. CRM, workplace, hosting, healthcare, education, and custom technology."
+    "meta_author": "Blaitware",
+    "meta_image": "/images/og-image.jpg",
+    "meta_description": "Builds and operates enterprise-grade custom software, websites, apps and end-to-end intelligent & future-ready IT solutions."
   }
 }

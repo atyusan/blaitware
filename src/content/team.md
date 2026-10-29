@@ -1,6 +1,6 @@
 ---
 title: Our Team
-description: Product, engineering, and consulting talent behind our work—Blaitware’s technology practice.
+description: Product, engineering, and consulting talent behind our work at Blaitware.
 layout: team
 draft: false
 members:

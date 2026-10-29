@@ -1,4 +1,7 @@
-import BlogPagination, { generateStaticParams } from "./page/[slug]/page";
+import BlogPagination, {
+  generateMetadata,
+  generateStaticParams,
+} from "./page/[slug]/page";
 
-export { generateStaticParams };
+export { generateMetadata, generateStaticParams };
 export default BlogPagination;
