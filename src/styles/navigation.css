@@ -43,7 +43,6 @@
 
 .navbar-brand .logo-img,
 .footer-brand .logo-img {
-  display: block;
   width: 100%;
   height: auto;
   max-width: 100%;
@@ -67,11 +66,13 @@
 }
 
 .navbar-brand .img-light,
+.footer-brand .img-light,
 .img-light {
-  display: initial;
+  display: inline-block;
 }
 
 .navbar-brand .img-dark,
+.footer-brand .img-dark,
 .img-dark {
   display: none;
 }
@@ -564,13 +565,15 @@ html.dark .header.navigation.is-sticky {
 }
 
 html.dark .navbar-brand .img-light,
+html.dark .footer-brand .img-light,
 html.dark .img-light {
   display: none;
 }
 
 html.dark .navbar-brand .img-dark,
+html.dark .footer-brand .img-dark,
 html.dark .img-dark {
-  display: initial;
+  display: inline-block;
 }
 
 html.dark .navbar-toggler {
