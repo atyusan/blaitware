@@ -37,6 +37,9 @@ const icons = {
   FaArrowRight,
 };
 
+/** Temporary: set to true to show the EN/DE/CN language switcher again. */
+const ENABLE_LANGUAGE_SWITCHER = false;
+
 const Header = () => {
   const pathname = usePathname();
   const router = useRouter();
@@ -105,7 +108,7 @@ const Header = () => {
           <Logo />
 
           <div className="navbar-mobile-tools">
-            <LanguageSelect />
+            {ENABLE_LANGUAGE_SWITCHER && <LanguageSelect />}
             <ThemeSwitcher dark={dark} onToggle={toggleTheme} />
             <button
               type="button"
@@ -216,7 +219,9 @@ const Header = () => {
             </ul>
 
             <div className="navbar-actions">
-              <LanguageSelect className="language-desktop" />
+              {ENABLE_LANGUAGE_SWITCHER && (
+                <LanguageSelect className="language-desktop" />
+              )}
               <Link
                 className="btn btn-sm btn-primary"
                 href={localizePath("/get-demo", locale)}
