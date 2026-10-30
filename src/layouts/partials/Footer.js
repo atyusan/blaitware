@@ -50,26 +50,28 @@ const Footer = () => {
                 <div className="col-12 sm:col-6 lg:col-3 text-left">
                   <Link
                     href={localizePath("/", locale)}
-                    className="mb-3 inline-block"
+                    className="footer-brand mb-3 inline-block"
                     aria-label={title || "Blaitware"}
+                    style={{
+                      "--logo-w": `${width}px`,
+                      "--logo-h": `${height}px`,
+                    }}
                   >
                     <Image
                       src={logo}
-                      width={width}
-                      height={height}
+                      width={width * 2}
+                      height={height * 2}
                       alt={title || "Blaitware"}
                       unoptimized
-                      className="img-light"
-                      style={{ width: `${width}px`, height: "auto" }}
+                      className="img-light logo-img"
                     />
                     <Image
                       src={logo_dark || logo}
-                      width={width}
-                      height={height}
+                      width={width * 2}
+                      height={height * 2}
                       alt={title || "Blaitware"}
                       unoptimized
-                      className="img-dark"
-                      style={{ width: `${width}px`, height: "auto" }}
+                      className="img-dark logo-img"
                     />
                   </Link>
                   {markdownify(footer_content, "p", "mb-4 text-left")}

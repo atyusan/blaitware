@@ -30,34 +30,53 @@ const Products = ({ data, products }) => {
   );
 
   return (
-    <section className="section">
-      <div className="container">
-        <div className="mb-12 text-center">
-          <h1 className="h2 mb-3">{title}</h1>
-          <p className="mx-auto max-w-2xl">{description}</p>
+    <>
+      <section className="section pb-0">
+        <div className="container text-center">
+          <div className="row">
+            <div className="col-12 mx-auto lg:col-6">
+              <h1 className="h2 mb-3">{title}</h1>
+              <p className="mb-0 font-medium">{description}</p>
+            </div>
+          </div>
         </div>
-        <div className="row gy-4">
-          {sorted.map((product) => {
-            const Icon = icons[product.frontmatter.icon] || FaUsers;
-            return (
-              <div className="col-12 sm:col-6 lg:col-3" key={product.slug}>
-                <Link
-                  href={`/products/${product.slug}`}
-                  className="block h-full rounded-lg border border-border p-6 transition hover:shadow"
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="products-grid row justify-center">
+            {sorted.map((product) => {
+              const Icon = icons[product.frontmatter.icon] || FaUsers;
+              return (
+                <div
+                  className="col-12 sm:col-6 lg:col-4 xl:col-3"
+                  key={product.slug}
                 >
-                  <Icon className="mb-4 text-3xl text-primary" />
-                  <h3 className="h5 mb-2">{product.frontmatter.title}</h3>
-                  <p className="mb-4 text-sm">{product.frontmatter.description}</p>
-                  <span className="inline-flex items-center gap-2 text-primary">
-                    View product <FaArrowRight className="text-xs" />
-                  </span>
-                </Link>
-              </div>
-            );
-          })}
+                  <Link
+                    href={`/products/${product.slug}`}
+                    className="products-card is-hoverable block h-full text-inherit no-underline"
+                  >
+                    <div className="products-card-body">
+                      <span className="mb-4 inline-block text-h3 text-primary">
+                        <Icon aria-hidden />
+                      </span>
+                      <h3 className="h5">{product.frontmatter.title}</h3>
+                      <p className="mb-4 mt-3">{product.frontmatter.description}</p>
+                    </div>
+                    <div className="products-card-footer">
+                      <span className="inline-flex items-center font-medium text-primary">
+                        View Product{" "}
+                        <FaArrowRight className="ms-1 text-xs" />
+                      </span>
+                    </div>
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

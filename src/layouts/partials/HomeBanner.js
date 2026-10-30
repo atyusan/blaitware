@@ -21,12 +21,13 @@ const HomeBanner = ({ banner }) => {
               </div>
             )}
             <Image
-              className="img mx-auto"
+              className="img mx-auto h-auto w-full max-w-[750px]"
               src={banner.image}
               width={750}
               height={390}
               alt="banner image"
               priority
+              sizes="(max-width: 768px) 100vw, 750px"
             />
           </div>
         </div>

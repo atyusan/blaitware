@@ -32,11 +32,12 @@
   --text-h5: 1.5625rem;
   --text-h5-sm: 1.40625rem;
   --text-h4: 1.953125rem;
-  --text-h4-sm: 1.7578125rem;
+  --text-h4-sm: 1.5rem;
   --text-h3: 2.44140625rem;
-  --text-h3-sm: 2.197265625rem;
+  --text-h3-sm: 1.75rem;
   --text-h2: 3.0517578125rem;
-  --text-h2-sm: 2.74658203125rem;
+  --text-h2-sm: 2rem;
   --text-h1: 3.814697265625rem;
-  --text-h1-sm: 3.4332275390625rem;
+  /* Mobile headings: readable without dominating the viewport */
+  --text-h1-sm: 2.25rem;
 }

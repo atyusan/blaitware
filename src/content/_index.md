@@ -42,7 +42,7 @@ feature:
 video:
   title: Software you can launch. Delivery you can trust.
   content: From first demo to production hosting on Bytstack, we stay with you through implementation, training, and ongoing operations.
-  image: /images/video-popup.jpg
+  image: /images/video-thumbnail.jpg
   video_id: dyZcRRWiuuw
 
 services:
@@ -87,15 +87,12 @@ testimonials:
   items:
     - name: Adaeze Okonkwo
       designation: Operations Lead, Meridian Retail
-      avatar: /images/avatar/03.jpg
       content: Blait CRM and Desk gave our sales and support teams one customer view. Their team stayed through rollout and training.
     - name: James Adeyemi
       designation: CTO, Horizon Clinics
-      avatar: /images/avatar/04.jpg
       content: Care-Sync replaced scattered spreadsheets. Having a partner who understands hospital workflows made the difference.
     - name: Sarah Blake
       designation: Founder, Northline Digital
-      avatar: /images/avatar/02.jpg
       content: We host client sites on Bytstack and send campaigns with Nexora. One vendor, clear accountability, faster launches.
 
 tools:

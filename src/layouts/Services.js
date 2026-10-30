@@ -70,7 +70,7 @@ const Services = ({ data }) => {
       {datacenter && (
         <section className="section bg-light">
           <div className="container">
-            <div className="row items-center gy-5">
+            <div className="row items-center gap-y-8">
               <div className="col-12 lg:col-6">
                 <h2 className="section-title h3 mb-4">{datacenter.title}</h2>
                 <p className="mb-4">{datacenter.content}</p>

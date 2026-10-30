@@ -24,7 +24,7 @@ const Career = ({ data, jobs }) => {
           <div className="career-jobs row">
             {jobs.map((job) => (
               <div className="career-job-col col-12 md:col-6" key={job.slug}>
-                <div className="is-hoverable relative h-full rounded-xl border border-border p-12">
+                <div className="is-hoverable relative h-full rounded-xl border border-border p-6 md:p-12">
                   <h5 className="mb-2">{job.frontmatter.title}</h5>
                   <p className="mb-0">
                     <span>{job.frontmatter.type}</span> |{" "}

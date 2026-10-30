@@ -46,7 +46,7 @@ const CaseStudies = ({ data, cases }) => {
                         />
                       )}
                     </div>
-                    <div className="flex flex-1 flex-col p-12 pb-0">
+                    <div className="flex flex-1 flex-col p-6 pb-0 md:p-12 md:pb-0">
                       <h3 className="h5">{item.frontmatter.title}</h3>
                       <div className="content mt-3 mb-4">
                         <h5>Client</h5>
@@ -56,7 +56,7 @@ const CaseStudies = ({ data, cases }) => {
                         </p>
                       </div>
                     </div>
-                    <div className="p-12 pt-0">
+                    <div className="p-6 pt-0 md:p-12 md:pt-0">
                       <span className="inline-flex items-center font-medium text-primary">
                         Read the full case study
                         <FaArrowRight className="ml-1 text-xs" />

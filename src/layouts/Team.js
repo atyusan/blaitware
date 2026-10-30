@@ -20,7 +20,7 @@ const Team = ({ data }) => {
 
       <section className="section">
         <div className="container">
-          <div className="row gap-y-10 gy-5">
+          <div className="row gap-y-8 md:gap-y-10">
             {members?.map((member, i) => (
               <div className="col-6 lg:col-4 xl:col-3" key={i}>
                 <div className="team-card text-center">

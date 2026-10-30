@@ -18,15 +18,73 @@ html.dark .btn:focus {
 
 /* Hover / card motion continues below */
 
-/* Section spacing on small screens */
+/* Section spacing on small screens — keep content reachable without excess scroll */
 @media (max-width: 767px) {
   .section {
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .banner {
-    padding-top: 3rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .banner h1 {
+    font-size: clamp(1.85rem, 8vw, 2.25rem);
+    line-height: 1.2;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .banner .btn {
+    margin: 0.35rem;
+  }
+
+  /* Dense cards: p-12 is too tall on phones */
+  .career-jobs .is-hoverable,
+  .faq-content,
+  .case-studies-grid .flex.flex-col {
+    padding: 1.5rem !important;
+  }
+
+  .case-studies-grid .p-12 {
+    padding: 1.5rem !important;
+  }
+
+  .case-studies-grid .pb-0 {
+    padding-bottom: 0 !important;
+  }
+
+  .case-studies-grid .pt-0 {
+    padding-top: 0 !important;
+  }
+
+  .products-card-body {
+    padding: 1.5rem 1.5rem 0;
+  }
+
+  .products-card-footer {
+    padding: 0 1.5rem 1.5rem;
+  }
+
+  .feature-card {
+    padding: 1.25rem !important;
+  }
+
+  .get-demo-form .form-input,
+  .get-demo-form .form-select,
+  .contact-form .form-input,
+  .contact-form .form-textarea,
+  .contact-form .form-select {
+    height: 44px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .contact-form .form-textarea {
+    height: auto;
+    min-height: 110px;
   }
 }
 
@@ -249,6 +307,30 @@ html.dark .tool-chip {
 }
 
 /* Testimonials */
+.testimonial-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 9999px;
+  background-color: #fff;
+  border: 1px solid var(--color-border, #e9e9e9);
+  color: var(--color-primary, #0aa8a7);
+  font-family: var(--font-primary), Urbanist, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  user-select: none;
+}
+
+html.dark .testimonial-avatar {
+  background-color: var(--color-darkmode-body, #1e262c);
+  border-color: var(--color-darkmode-border, #4e4e4e);
+  color: var(--color-darkmode-primary, #0aa8a7);
+}
+
 .testimonial-carousel {
   padding-bottom: 100px !important;
 }

@@ -57,7 +57,7 @@ function Faq({ data }) {
               {filtered.map((faq, index) => (
                 <div
                   key={index}
-                  className="faq-content is-hoverable mb-12 rounded-xl border border-border p-12"
+                  className="faq-content is-hoverable mb-6 rounded-xl border border-border p-6 md:mb-12 md:p-12"
                 >
                   <h3 className="check-mark h5 mb-4">
                     <FaCheckCircle aria-hidden="true" />

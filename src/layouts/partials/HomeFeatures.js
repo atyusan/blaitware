@@ -35,14 +35,7 @@ const HomeFeatures = ({ feature }) => {
             </div>
           </div>
           <div className="col-12 xl:col-8">
-            {/* Bootstrap g-5 gutters (3rem) — Tailwind gy/gx do not drive bs gutters */}
-            <div
-              className="row"
-              style={{
-                "--bs-gutter-x": "3rem",
-                "--bs-gutter-y": "3rem",
-              }}
-            >
+            <div className="home-features-grid row">
               {feature.features.map((item, i) => {
                 const Icon = icons[item.icon] || FaRegDotCircle;
                 return (

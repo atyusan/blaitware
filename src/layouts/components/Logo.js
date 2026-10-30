@@ -19,7 +19,10 @@ const Logo = () => {
       href={localizePath("/", locale)}
       className="navbar-brand"
       aria-label={title || "Logo"}
-      style={{ height: `${height}px`, width: `${width}px` }}
+      style={{
+        "--logo-w": `${width}px`,
+        "--logo-h": `${height}px`,
+      }}
     >
       {logo ? (
         <>
@@ -30,7 +33,7 @@ const Logo = () => {
             height={height * 2}
             priority
             unoptimized
-            className="img-light h-full w-auto"
+            className="img-light logo-img"
           />
           <Image
             src={logo_dark || logo}
@@ -39,7 +42,7 @@ const Logo = () => {
             height={height * 2}
             priority
             unoptimized
-            className="img-dark h-full w-auto"
+            className="img-dark logo-img"
           />
         </>
       ) : (

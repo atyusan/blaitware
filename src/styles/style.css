@@ -99,6 +99,62 @@ html.dark .is-hoverable:hover {
   box-shadow: 0 6px 24px -1px rgba(0, 0, 0, 0.3) !important;
 }
 
+/* Products listing: match premium gx-sm-5 / gy-5 (3rem gutters) */
+.products-grid {
+  row-gap: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .products-grid {
+    row-gap: 3rem;
+    margin-inline: -1.5rem;
+  }
+
+  .products-grid > [class*="col-"] {
+    padding-inline: 1.5rem; /* gx-sm-5 half-gutter */
+  }
+}
+
+/* Home feature cards: g-5 gutters without overflow on small screens */
+.home-features-grid {
+  row-gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .home-features-grid {
+    row-gap: 3rem;
+    margin-inline: -1.5rem;
+  }
+
+  .home-features-grid > [class*="col-"] {
+    padding-inline: 1.5rem;
+  }
+}
+
+.products-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid var(--color-border, #e9e9e9);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.products-card-body {
+  flex: 1 1 auto;
+  padding: 3rem 3rem 0;
+}
+
+.products-card-footer {
+  padding: 0 3rem 3rem;
+}
+
+html.dark .products-card {
+  background-color: var(--color-darkmode-light, #1b2229);
+  border-color: var(--color-darkmode-border, #4e4e4e);
+}
+
 /* Services offerings: gy-* utilities are not generated; add real card spacing */
 .services-offerings {
   row-gap: 1.5rem;
@@ -288,7 +344,7 @@ html.dark .pricing-accordion-btn:not(.is-open) {
   border-color: var(--color-darkmode-border);
 }
 
-/* Contact form — match premium Bootstrap g-4 + form-control sizing */
+/* Contact / get-demo forms — match premium Bootstrap g-4 + form-control sizing */
 .contact-form > [class*="col-"] {
   padding-inline: 0.75rem;
 }
@@ -298,15 +354,57 @@ html.dark .pricing-accordion-btn:not(.is-open) {
 }
 
 .contact-form .form-input,
-.contact-form .form-textarea {
+.contact-form .form-textarea,
+.contact-form .form-select {
   height: 48px;
   padding: 16px 19.2px;
-  line-height: 1.2;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid rgba(16, 20, 24, 0.1);
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.contact-form .form-select {
+  padding-top: 0;
+  padding-bottom: 0;
+  /* match premium form-select; caret is a background image */
+  padding-right: 19.2px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 12px) center;
+  background-size: 16px 12px;
 }
 
 .contact-form .form-textarea {
   height: auto;
   min-height: 130px;
+}
+
+/* get-demo: premium row g-6 gutters between form + logos (from sm up) */
+@media (min-width: 576px) {
+  .get-demo-row > [class*="col-"] {
+    padding-inline: 1rem;
+  }
+
+  .get-demo-row {
+    margin-inline: -1rem;
+  }
+}
+
+html.dark .contact-form .form-input,
+html.dark .contact-form .form-textarea,
+html.dark .contact-form .form-select {
+  color: var(--color-darkmode-text-dark, #fff);
+  background-color: var(--color-darkmode-body, #1e262c);
+  border-color: var(--color-darkmode-border, #4e4e4e);
+}
+
+html.dark .contact-form .form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23cbcbcb' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
 
 /* Career single sidebar widgets */
